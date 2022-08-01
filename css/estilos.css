@@ -27,6 +27,32 @@ header{
     text-align: center;
     width: 100%;
 }
+.imagenes:hover{
+    height: 300px;
+}
+.img-main{
+    animation-name: preparados;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes preparados {
+    0%{
+        transform: scale(.5);
+        border-radius: 100%;
+    }
+
+    50%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(2);
+
+    }
+   
+}
 ul{
     display: flex;
     font-family: 'Edu SA Beginner', cursive;
@@ -52,6 +78,18 @@ ul li {
     background-size: cover;
    
     
+}
+.buttom{
+    background-color: #0de44d;
+    color: white;
+    font-size: 14px;
+    padding: 8px 35px;
+    border-radius: 25px;
+    transition: all 2s;
+}
+.buttom:hover{
+    height: 50px;
+    background-color: #0bc041;
 }
 .comerciales{
     display: flex;
