@@ -7,92 +7,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assetts/Icons/farmacianature.jpg" type="image/x-icon">
     <!--Hoja de Estilos de manera externa-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Edu+SA+Beginner:wght@500&family=Noto+Serif:ital@1&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Edu+SA+Beginner:wght@500&family=Noto+Serif:ital@1&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
     <title>FarmaciaNature-Home</title>
 </head>
 
 <body>
-    <div class="contenedor">
-      <header class="navbar">
-         <img  class="imagen logo" src="./assetts/Icons/naturepharma.jpg" width="250px">
-            <nav>
-               <!--Hipervinculos a mis paginas web-->>
-
-                <!--Lista Desordenada-->
-                <ul>
-                   <!--Enlaces Relativos-->
-                   <li><a href="./index.html">Inicio</a></li>
-                   <li><a href="./belleza.html">Belleza</a></li>
-                   <li><a href="./promociones.html">Promociones</a> </li>
-                   <li><a href="./contacto.html">Contacto</a> </li>
-                   <li><a href="./cuidadopersonal.html">Cuidado Personal</a> </li>
-                   <li><a href="./dermocosmetica.html"> Dermocosmética </a> </li>
-                </ul>
+    <header>
+        
+            <nav class="navbar navbar-expand-lg navbar-light navbar-light"   style="background-color: #7fe7b7;">
+                <div class="container-fluid"> <img class="imagen logo" src="./assetts/Icons/naturepharma.jpg" width="250px">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapsenavbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./belleza.html">Belleza</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./promociones.html" >Promociones</a></li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./cuidadopersonal.html">Cuidado-Personal</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./dermocosmetica.html">Dermocosmetica</a>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </div>
             </nav>
-      </header>
-    </div>
-    <main class="fondo">
-        <section class="comerciales">
-            <article>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZkjDiw3cwvo"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </article>
-            <article>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Sb5xiSOi3E4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </article>
-        </section>
-        <section class="comprar">
-            <article>
-                <!--Imagen de Mascara de pestañas Maybelline Colossal-->
-                <img src="./assetts/Icons/maybelline-mascara-colossal-36hr-01-black-3600531639075-av11 - copia.webp" width="200px" class="imagenes">
-                <p class="front-destacados">Mascara de pestañas Maybelline Colossal </p>
-                <input class="buttom" value="agregar al carrito">
-            </article>
-            <article>
-                <!--Imagen de Base de maquillaje Loreal-->>
-                <img src="./assetts/Icons/base de maquillaje loreal.png" width="200px" class="imagenes">
-                <p class="front-destacados">Base de maquillaje Loreal</p>
-                <input class="buttom" value="agregar al carrito">
-            </article>
-            <article>
-                <!--Imagen de Crema facial Dermaglos-->>
-                <img src="./assetts/Icons/hidratante dermaglos.png" width="200px" class="imagenes">
-                <p>Crema facial Dermaglos 50 fps </p>
-                <input class="buttom" type="button" value="agregar al carrito" >
-            </article>
-           
-        </section>
-        <section>
-            <article class="article-info">
-                <img class="img-main" src="./assetts/Icons/Fórmules-magistrals.jpg" width="300px">
-                <p class="front-destacados" >Preparados Magistrales</p>
-            </article>
+        
+    </header>
+        <main class="fondo">
+            <section class="comerciales">
+                <article>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZkjDiw3cwvo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </article>
+                <article>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Sb5xiSOi3E4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </article>
+            </section>
+            <section class="comprar">
+                <article>
+                    <!--Imagen de Mascara de pestañas Maybelline Colossal-->
+                    <img src="./assetts/Icons/maybelline-mascara-colossal-36hr-01-black-3600531639075-av11 - copia.webp"
+                        width="200px" class="imagenes">
+                    <p class="front-destacados">Mascara de pestañas Maybelline Colossal </p>
+                    <input class="buttom" value="agregar al carrito">
+                </article>
+                <article>
+                    <!--Imagen de Base de maquillaje Loreal-->>
+                    <img src="./assetts/Icons/base de maquillaje loreal.png" width="200px" class="imagenes">
+                    <p class="front-destacados">Base de maquillaje Loreal</p>
+                    <input class="buttom" value="agregar al carrito">
+                </article>
+                <article>
+                    <!--Imagen de Crema facial Dermaglos-->>
+                    <img src="./assetts/Icons/hidratante dermaglos.png" width="200px" class="imagenes">
+                    <p>Crema facial Dermaglos 50 fps </p>
+                    <input class="buttom" type="button" value="agregar al carrito">
+                </article>
 
-        </section>
-        <div class="margen"> 
-           <h3>Marcas con las que trabajamos
-             <li>Maybelline</li>
-             <li>DaPop</li>
-             <li>Dermaglos</li>
-             <li>Loreal</li>
-             <li>Sephora</li>
-           </h3>
-        </div>
+            </section>
+            <section>
+                <article class="article-info">
+                    <img class="img-main" src="./assetts/Icons/Fórmules-magistrals.jpg" width="300px">
+                    <p class="front-destacados">Preparados Magistrales</p>
+                </article>
 
-    </main>
-    <footer id="footer">
-        <h4>Seguinos en nuestras redes sociales</h4>
-        <p>Copyright todos los derechos reservados</p>
-        <a href="https://www.instagram.com/farmacityoficial/"> Instagram</a>
-        <a href="https://www.facebook.com/Farmacity"> Facebook </a>
-    </footer>
+            </section>
+            <div class="margen">
+                <h3>Marcas con las que trabajamos
+                    <li>Maybelline</li>
+                    <li>DaPop</li>
+                    <li>Dermaglos</li>
+                    <li>Loreal</li>
+                    <li>Sephora</li>
+                </h3>
+            </div>
 
+        </main>
+        <footer id="footer">
+            <h4>Seguinos en nuestras redes sociales</h4>
+            <p>Copyright todos los derechos reservados</p>
+            <a href="https://www.instagram.com/farmacityoficial/"> <i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/Farmacity"> <i class="bi bi-facebook"></i> </a>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
 </body>
 
-</html> 
+</html>

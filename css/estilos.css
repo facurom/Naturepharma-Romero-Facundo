@@ -12,20 +12,25 @@ body {
     font-family: "Roboto", Sans-Serif;
 }
 
-header{
+/*header{
     display: flex;
     color: aliceblue;
     margin: 15px 20px 25px 30px;
     
     background-color: rgb(16, 236, 163);
-}
+}*/
 
 .navbar {
-    display: flex;
+    display: flex ;
     list-style-type: none;
     padding: 30px;
     text-align: center;
     width: 100%;
+    
+}
+.collapsenavbar-collapse{
+    justify-content: flex-end;
+    flex-grow: initial;
 }
 .imagenes:hover{
     height: 300px;
@@ -373,8 +378,11 @@ ul li {
 .info-contacto ul li{
     padding: .3rem;   
 }
-#footer { 
-  
+#footer{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   color: rgb(62, 69, 75);
   font-size: 20px;
   
@@ -400,7 +408,7 @@ ul li {
     }
     
     nav ul{
-        height: 300px;
+        height: 400px;
         flex-direction: column;
         text-align: center;
     }
@@ -409,6 +417,7 @@ ul li {
         flex-direction: column;
         align-items: center;
     }
+    
     .comprar{
         font-family: "poppins", sans-serif;
         font-size: 25px;
@@ -505,7 +514,7 @@ ul li {
     }
     
     nav ul{
-        height: 300px;
+        height: 400px;
         flex-direction: column;
         text-align: center;
     }
@@ -530,7 +539,9 @@ ul li {
         align-items: center;
         
         
+        
     }
+    
     .comerciales {
         display: flex;
         flex-direction: column;
