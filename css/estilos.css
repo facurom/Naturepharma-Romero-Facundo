@@ -12,13 +12,13 @@ body {
     font-family: "Roboto", Sans-Serif;
 }
 
-/*header{
+header{
     display: flex;
     color: aliceblue;
     margin: 15px 20px 25px 30px;
     
     background-color: rgb(16, 236, 163);
-}*/
+}
 
 .navbar {
     display: flex ;
@@ -103,6 +103,11 @@ ul li {
     width: 100%; 
     
       
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
 }
 .comprar{
     display:flex;
@@ -380,8 +385,8 @@ ul li {
 }
 #footer{ 
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  
 
   color: rgb(62, 69, 75);
   font-size: 20px;
@@ -390,6 +395,9 @@ ul li {
   background-size: cover;
   box-sizing: border-box;
   
+}
+i{
+    font-size: 2.2rem;
 }
 
 @media only screen and (max-width:768px) {
