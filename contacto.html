@@ -47,59 +47,43 @@
         </nav>
     </header>
     <main class="body-contact">
+        <h3>Contáctanos</h3>
+        <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+          </div>
 
         <div class="contenido">
-
-
-            <div class="contenedor-contacto">
-                <div class="formulario-contacto">
-                    <h3>Contáctanos</h3>
-                    <form action="">
-                        <p>
-                            <label for="nombre-completo">Nombre completo</label>
-                            <input type="text" name="nombre-completo">
-                        </p>
-
-                        <p>
-                            <label for="correo">Correo Electrónico</label>
-                            <input type="email" name="correo">
-                        </p>
-
-                        <p>
-                            <label for="telefono">Teléfono</label>
-                            <input type="tel" name="telefono">
-                        </p>
-
-                        <p>
-                            <label for="asunto">Asunto</label>
-                            <input type="text" name="asunto">
-                        </p>
-
-                        <p class="bloque">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea name="mensaje" rows="3"></textarea>
-                        </p>
-
-                        <p class="bloque">
-                            <button type="submit">
-                                Enviar
-                            </button>
-                        </p>
-
-                    </form>
-                </div>
-
-                <div class="info-contacto">
-                    <ul>
-                        <li><i class="fa-solid fa-location-dot"></i>Av.Uruguay 2550</li>
-                        <li><i class="fa-solid fa-phone"></i>3764-534471</li>
-                        <li><i class="fa-solid fa-envelope"></i>contacto@naturepharma.com.ar</li>
-                    </ul>
-
-
-
-                </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
             </div>
+            <h3>Iniciar sesion</h3>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+
+           
+            <div class="info-contacto">
+                <ul class="contactanos">
+                    <li><i class="fa-solid fa-location-dot"></i>Av.Uruguay 2550</li>
+                    <li><i class="fa-solid fa-phone"></i>3764-534471</li>
+                    <li><i class="fa-solid fa-envelope"></i>contacto@naturepharma.com.ar</li>       
+                </ul>
+
+
+
+            </div>
+            
         </div>
 
     </main>
