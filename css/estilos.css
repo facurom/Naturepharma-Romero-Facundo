@@ -1,643 +1,495 @@
-*{
-    margin: 0;
-    
-    padding: 0;
-    
-    box-sizing: border-box;
-    
-    }
-    
-body {
-    background-color: aliceblue;
-    font-family: "Roboto", Sans-Serif;
-}
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-header{
-    display: flex;
-    color: aliceblue;
-    margin: 15px 20px 25px 30px;
-    
-    background-color: rgb(16, 236, 163);
-}
+body {
+  background-color: aliceblue;
+  font-family: "Roboto", Sans-Serif;
+  padding: 20px; }
+
+header {
+  display: flex;
+  color: aliceblue;
+  margin: 15px 20px 25px 30px;
+  background-color: #10eca3; }
 
 .navbar {
-    display: flex ;
-    list-style-type: none;
-    padding: 30px;
-    text-align: center;
-    width: 100%;
-    
-}
-.collapsenavbar-collapse{
-    justify-content: flex-end;
-    flex-grow: initial;
-}
-.imagenes:hover{
-    height: 300px;
-}
-.img-main{
-    animation-name: comprar;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
-    animation-delay: 3s;
-    animation-iteration-count: 1;
-}
+  display: flex;
+  list-style-type: none;
+  padding: 30px;
+  text-align: center;
+  width: 100%; }
+
+.collapsenavbar-collapse {
+  justify-content: flex-end;
+  flex-grow: initial; }
+
+.imagenes:hover {
+  height: 300px; }
+
+.img-main {
+  animation-name: comprar;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
+  animation-iteration-count: 1; }
+
 @keyframes comprar {
-    0%{
-        transform: scale(.5);
-        border-radius: 100%;
-    }
+  0% {
+    transform: scale(0.5);
+    border-radius: 100%; }
+  50% {
+    transform: scale(1); }
+  100% {
+    transform: scale(2); } }
 
-    50%{
-        transform: scale(1);
-    }
+ul {
+  display: flex;
+  font-family: 'Edu SA Beginner', cursive;
+  padding-left: 1rem;
+  justify-content: flex-start; }
 
-    100%{
-        transform: scale(2);
-
-    }
-   
-}
-ul{
-    display: flex;
-    font-family: 'Edu SA Beginner', cursive;
-    padding-left: 1rem;
-    justify-content: flex-start;
-}
 ul li {
-    color: greenyellow;
-    font-size: 25px; 
-    margin: 8px 20px;
-    text-decoration: none;
-}
+  color: greenyellow;
+  font-size: 25px;
+  margin: 8px 20px;
+  text-decoration: none; }
+
 .article-info {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    text-align: center;
-    
-}
-#fondo{
-    background-image: url(../assetts/Icons/v870-tang-30.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-   
-    
-}
-.buttom{
-    background-color: #0de44d;
-    color: white;
-    font-size: 14px;
-    padding: 8px 35px;
-    border-radius: 25px;
-    transition: all 2s;
-}
-.buttom:hover{
-    height: 50px;
-    background-color: #0bc041;
-}
-.comerciales{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    width: 100%; 
-    
-      
-}
-.card{
-    display: flex;
-    justify-content: space-around;
-    justify-items: center;
-}
-.comprar{
-    display:flex;
-    justify-content: space-around;
-    justify-items: center;
-    font-family: 'Noto Serif', serif;
- 
-}
-.imagen  {
-    display: flex;
-    
-}
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  text-align: center; }
+
+#fondo {
+  background-image: url(../assetts/Icons/v870-tang-30.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .buttom {
-    display: flex;
-    justify-content: center;
-}
-.margen{
-    background-color: aqua;
-    margin: 15px 20px 25px 30px;
-    padding: 30px 25px 20px 15px;
-}
+  background-color: #0de44d;
+  color: white;
+  font-size: 14px;
+  padding: 8px 35px;
+  border-radius: 25px;
+  transition: all 2s; }
 
-.menu-de-cosmetologia {
-    
-    font-family: "poppins", sans-serif;
-    font-size: 25px;
-    text-align: center;
+.buttom:hover {
+  height: 50px;
+  background-color: #0bc041; }
 
-    width: 90%;
-    height: 600px;
-    margin: 40px auto;
-    border: 1px groove rgb(248, 244, 244);
-
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-areas: 
-    "Belleza Belleza"
-    "Maquillaje Fragancias"
-    "Piel Piel "
-}
-
-.item1 {
-    background-color: gold;
-    font-size: 30px;
-    grid-area: Belleza;
-    font-family: "poppins", sans-serif;
-}
-.maquillaje{
-    background-image: url(../assetts/Img/cosmetologia1.png);
-    background-size: cover;
-    font-size: 30px;
-    grid-area: Maquillaje;
-    font-family: "poppins", sans-serif;
-}
-.perfumesyfragancias{
-    background-image: url(../assetts/Img/cosmetologia2.png);
-    background-size: cover;
-    font-size: 30px;
-    grid-area: Fragancias;
-    font-family: "poppins", sans-serif;
-
-}
-.cuidadosdelapiel{
-    background-image: url(../assetts/Img/cosmetologia3.png);
-    background-size: cover;
-    font-size: 30px;
-    grid-area: Piel;
-    font-family: "poppins", sans-serif;
-}
-
-
-.menu-de-dermocosmetica{
-    font-family: "poppins", sans-serif;
-    font-size: 25px;
-    text-align: center;
-
-    width: 90%;
-    height: 600px;
-    margin: 40px auto;
-    border: 1px groove rgb(248, 244, 244);
-
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-areas: 
-    "Dermocosmética Dermocosmética"
-    "Rostro Solar"
-    "Corporal Cabello"
-}
-.item2{
-    background-color: rgb(0, 17, 255);
-    font-size: 30px;
-    grid-area: Dermocosmética ;
-    font-family: "poppins", sans-serif;
-}
-.rostro{
-    background-image: url(../assetts/Img/dermocosmetica1.png);
-    background-size: cover;
-    font-size: 30px;
-    grid-area: Rostro;
-    font-family: "poppins", sans-serif;
-}
-.solar{
-    background-image: url(../assetts/Img/dermocosmetica2.png);
-    background-size: cover;
-    font-size: 30px;
-    grid-area: Solar;
-    font-family: "poppins", sans-serif;
-}
- .corporal{
-    background-image: url(../assetts/Img/dermocosmetica3.png);
-    background-size: cover;
-    font-size: 30px;
-    grid-area: Corporal;
-    font-family: "poppins", sans-serif;
-}
-.cabello{
-    background-image: url(../assetts/Img/dermocosmetica4.png);
-    background-size: cover;
-    font-size: 30px;
-    grid-area: Cabello;
-    font-family: "poppins", sans-serif;
-}
-.menu-cuidado-personal{
-    font-family: "poppins", sans-serif;
-    font-size: 25px;
-    text-align: center;
-
-    width: 90%;
-    height: 600px;
-    margin: 40px auto;
-    border: 1px groove rgb(248, 244, 244);
-
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-areas: 
-    "Cuidado-Personal Cuidado-Personal"
-    "Adultos Salud-Oral"
-    "Higiene-Personal Higiene-Personal"
-}
-.item3{
-    background-color: rgb(0, 255, 76);
-    font-size: 30px;
-    grid-area: Cuidado-Personal ;
-    font-family: "poppins", sans-serif;
-}
-.adultos{
-    background-image: url(../assetts/Img/cuidadopersonal1.png);
-    background-size: cover;
-    font-size: 30px;
-    grid-area: Adultos;
-    font-family: "poppins", sans-serif;
-}
-.salud-oral{background-image: url(../assetts/Img/cuidadopersonal2.png);
-    background-size: cover;
-    font-size: 30px;
-    grid-area: Salud-Oral;
-    font-family: "poppins", sans-serif;}
-.higiene-personal{background-image: url(../assetts/Img/cuidadopersonal3.png);
-    background-size: cover;
-    font-size: 30px;
-    grid-area: Higiene-Personal;
-    font-family: "poppins", sans-serif;}
-
-
-.menu-de-promociones{
-    font-family: "poppins", sans-serif;
-    font-size: 25px;
-    text-align: center;
-
-    width: 90%;
-    height: 600px;
-    margin: 40px auto;
-    border: 1px groove rgb(248, 244, 244);
-
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-areas: 
-    "Ofertas Ofertas"
-    "Descuento-a Descuento-B"
-    "Descuento-a Descuento-C "
-    
-}
-.item4{
-    background-image: url(../assetts/Img/porcentajes.png);
-    font-size: cover;
-    font-size: 30px;
-    grid-area: Ofertas;
-    font-family: "poppins", sans-serif;
-}
-.descuento-a{
-    background-image: url(../assetts/Img/descuento-a.png);
-    background-size: cover;
-    font-size: 30px;
-    grid-area: Descuento-a;
-    font-family: "poppins", sans-serif;
-}   
-.descuento-b{
-    background-image: url(../assetts/Img/descuento-b.png);
-    background-size: cover;
-    font-size: 30px;
-    grid-area: Descuento-B;
-    font-family: "poppins", sans-serif;
-}
-.descuento-c{
-    background-image: url(../assetts/Img/descuento-c.png);
-    background-size: cover;
-    font-size: 30px;
-    grid-area: Descuento-C;
-    font-family: "poppins", sans-serif;
-}
-.formulario-contacto form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.contenedor-contacto{
-    background-color: rgb(129, 190, 218);
-}
-.formulario-contacto{
-    background-color: #8be2a5;
-}
-.formulario-contacto form .bloque{
-    grid-column: 1/3;
-}
-
-.formulario-contacto form p{
-    margin: 0;
-    padding: 1em;
-}
-.formulario-contacto form textarea{
-    width: 100%;
-    padding: .7rem;
-    border: none;
-    background: none;
-    outline: none;
-    border-bottom: 1px solid #f7f6f6;
-    color: #fff;
-}
-
-.formulario-contacto form button{
-    background-color: #e7ecec;
-    border: 0;
-    text-transform: uppercase;
-    padding: 1rem;
-}
-
-.info-contacto{
-    background-color: #000;
-}
-
-.info-contacto ul,
-.info-contacto p{
-    text-align: center;
-    margin: 0 0 1rem 0;
-}
-
-.info-contacto ul{
-    list-style-type: none;
-    padding: 0;
-}
-
-.info-contacto ul li{
-    padding: .3rem;   
-}
-#footer{ 
+.comerciales {
   display: flex;
   justify-content: space-around;
-  
+  text-align: center;
+  width: 100%; }
 
-  color: rgb(62, 69, 75);
+.card {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center; }
+
+.comprar {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  font-family: 'Noto Serif', serif; }
+
+.imagen {
+  display: flex; }
+
+.buttom {
+  display: flex;
+  justify-content: center; }
+
+.margen {
+  background-color: aqua;
+  margin: 15px 20px 25px 30px;
+  padding: 30px 25px 20px 15px; }
+
+.menu-de-cosmetologia {
+  font-family: "poppins", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  width: 90%;
+  height: 600px;
+  margin: 40px auto;
+  border: 1px groove #f8f4f4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas: "Belleza Belleza" "Maquillaje Fragancias" "Piel Piel "; }
+
+.item1 {
+  background-color: gold;
+  font-size: 30px;
+  grid-area: Belleza;
+  font-family: "poppins", sans-serif; }
+
+.maquillaje {
+  background-image: url(../assetts/Img/cosmetologia1.png);
+  background-size: cover;
+  font-size: 30px;
+  grid-area: Maquillaje;
+  font-family: "poppins", sans-serif; }
+
+.perfumesyfragancias {
+  background-image: url(../assetts/Img/cosmetologia2.png);
+  background-size: cover;
+  font-size: 30px;
+  grid-area: Fragancias;
+  font-family: "poppins", sans-serif; }
+
+.cuidadosdelapiel {
+  background-image: url(../assetts/Img/cosmetologia3.png);
+  background-size: cover;
+  font-size: 30px;
+  grid-area: Piel;
+  font-family: "poppins", sans-serif; }
+
+.menu-de-dermocosmetica {
+  font-family: "poppins", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  width: 90%;
+  height: 600px;
+  margin: 40px auto;
+  border: 1px groove #f8f4f4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas: "Dermocosmética Dermocosmética" "Rostro Solar" "Corporal Cabello"; }
+
+.item2 {
+  background-color: #0011ff;
+  font-size: 30px;
+  grid-area: Dermocosmética;
+  font-family: "poppins", sans-serif; }
+
+.rostro {
+  background-image: url(../assetts/Img/dermocosmetica1.png);
+  background-size: cover;
+  font-size: 30px;
+  grid-area: Rostro;
+  font-family: "poppins", sans-serif; }
+
+.solar {
+  background-image: url(../assetts/Img/dermocosmetica2.png);
+  background-size: cover;
+  font-size: 30px;
+  grid-area: Solar;
+  font-family: "poppins", sans-serif; }
+
+.corporal {
+  background-image: url(../assetts/Img/dermocosmetica3.png);
+  background-size: cover;
+  font-size: 30px;
+  grid-area: Corporal;
+  font-family: "poppins", sans-serif; }
+
+.cabello {
+  background-image: url(../assetts/Img/dermocosmetica4.png);
+  background-size: cover;
+  font-size: 30px;
+  grid-area: Cabello;
+  font-family: "poppins", sans-serif; }
+
+.menu-cuidado-personal {
+  font-family: "poppins", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  width: 90%;
+  height: 600px;
+  margin: 40px auto;
+  border: 1px groove #f8f4f4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas: "Cuidado-Personal Cuidado-Personal" "Adultos Salud-Oral" "Higiene-Personal Higiene-Personal"; }
+
+.item3 {
+  background-color: #00ff4c;
+  font-size: 30px;
+  grid-area: Cuidado-Personal;
+  font-family: "poppins", sans-serif; }
+
+.adultos {
+  background-image: url(../assetts/Img/cuidadopersonal1.png);
+  background-size: cover;
+  font-size: 30px;
+  grid-area: Adultos;
+  font-family: "poppins", sans-serif; }
+
+.salud-oral {
+  background-image: url(../assetts/Img/cuidadopersonal2.png);
+  background-size: cover;
+  font-size: 30px;
+  grid-area: Salud-Oral;
+  font-family: "poppins", sans-serif; }
+
+.higiene-personal {
+  background-image: url(../assetts/Img/cuidadopersonal3.png);
+  background-size: cover;
+  font-size: 30px;
+  grid-area: Higiene-Personal;
+  font-family: "poppins", sans-serif; }
+
+.menu-de-promociones {
+  font-family: "poppins", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  width: 90%;
+  height: 600px;
+  margin: 40px auto;
+  border: 1px groove #f8f4f4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas: "Ofertas Ofertas" "Descuento-a Descuento-B" "Descuento-a Descuento-C "; }
+
+.item4 {
+  background-image: url(../assetts/Img/porcentajes.png);
+  font-size: cover;
+  font-size: 30px;
+  grid-area: Ofertas;
+  font-family: "poppins", sans-serif; }
+
+.descuento-a {
+  background-image: url(../assetts/Img/descuento-a.png);
+  background-size: cover;
+  font-size: 30px;
+  grid-area: Descuento-a;
+  font-family: "poppins", sans-serif; }
+
+.descuento-b {
+  background-image: url(../assetts/Img/descuento-b.png);
+  background-size: cover;
+  font-size: 30px;
+  grid-area: Descuento-B;
+  font-family: "poppins", sans-serif; }
+
+.descuento-c {
+  background-image: url(../assetts/Img/descuento-c.png);
+  background-size: cover;
+  font-size: 30px;
+  grid-area: Descuento-C;
+  font-family: "poppins", sans-serif; }
+
+.formulario-contacto form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.contenedor-contacto {
+  background-color: #81beda; }
+
+.formulario-contacto {
+  background-color: #8be2a5; }
+
+.formulario-contacto form .bloque {
+  grid-column: 1/3; }
+
+.formulario-contacto form p {
+  margin: 0;
+  padding: 1em; }
+
+.formulario-contacto form textarea {
+  width: 100%;
+  padding: .7rem;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid #f7f6f6;
+  color: #fff; }
+
+.formulario-contacto form button {
+  background-color: #e7ecec;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1rem; }
+
+.info-contacto {
+  background-color: #000; }
+
+.info-contacto ul,
+.info-contacto p {
+  text-align: center;
+  margin: 0 0 1rem 0; }
+
+.info-contacto ul {
+  list-style-type: none;
+  padding: 0; }
+
+.info-contacto ul li {
+  padding: .3rem; }
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  color: #3e454b;
   font-size: 20px;
-  
   background-image: url(../assetts/Icons/2112.w023.n001.1505B.p1.1505.jpg);
   background-size: cover;
-  box-sizing: border-box;
-  
-}
-i{
-    font-size: 2.2rem;
-}
+  box-sizing: border-box; }
 
-@media only screen and (max-width:768px) {
-    
-    body{
-        height: 400px;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-    
-    header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    nav ul{
-        
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-    .navbar{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .info-contacto{
-        width: 100%;
-    }
-    .contactanos{
-        display: flex;
-        flex-direction: column;
-    }
-    .comprar{
-        font-family: "poppins", sans-serif;
-        font-size: 25px;
-        text-transform: uppercase;
-    
-        width: 100%;
-        margin: px auto;
-        border: 1px groove black;
-    
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        
-        
-    }
-    .comerciales {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    #footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       }
-    .menu-de-promociones{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(3,auto);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        grid-template-areas: 
-        "Ofertas"
-        "Descuento-a"
-        "Descuento-B"
-        "Descuento-C" ;
-        gap: 10px;
-       }
-    .menu-de-dermocosmetica{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(2,auto);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        grid-template-areas:
-        "Dermocosmética"
-        "Rostro" 
-        "Solar"
-        "Corporal" 
-        "Cabello" ;
-        gap: 10px;
-    }
-    .menu-de-cosmetologia{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(2,auto);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        grid-template-areas:
-        "Belleza"
-        "Maquillaje" 
-        "Fragancias"
-        "Piel "
+i {
+  font-size: 2.2rem; }
 
-    }
-    .menu-cuidado-personal{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(2,auto);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        grid-template-areas:
-        "Cuidado-Personal"
-        "Adultos"
-        "Salud-Oral"
-        "Higiene-Personal"
+@media only screen and (max-width: 768px) {
+  body {
+    height: 400px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; }
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .info-contacto {
+    width: 100%; }
+  .contactanos {
+    display: flex;
+    flex-direction: column; }
+  .comprar {
+    font-family: "poppins", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    width: 100%;
+    margin: px auto;
+    border: 1px groove black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; }
+  .comerciales {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+  #footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .menu-de-promociones {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas: "Ofertas" "Descuento-a" "Descuento-B" "Descuento-C";
+    gap: 10px; }
+  .menu-de-dermocosmetica {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas: "Dermocosmética" "Rostro"  "Solar" "Corporal"  "Cabello";
+    gap: 10px; }
+  .menu-de-cosmetologia {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas: "Belleza" "Maquillaje"  "Fragancias" "Piel "; }
+  .menu-cuidado-personal {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas: "Cuidado-Personal" "Adultos" "Salud-Oral" "Higiene-Personal"; } }
 
-    }   
-}
-@media only screen and (max-width:576px) {
-
-    body{
-        height: 400px;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-    
-    header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    nav ul{
-        
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-    .navbar{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .comprar{
-        font-family: "poppins", sans-serif;
-        font-size: 25px;
-        text-transform: uppercase;
-    
-        width: 100%;
-        margin: px auto;
-        border: 1px groove black;
-    
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        
-        
-        
-    }
-   
-    .info-contacto{
-        
-        display: flex;
-        
-        text-align: center;
-        align-items: center;
-    }
-    .contactanos{
-        display: flex;
-        flex-direction: column;
-    }
-    .comerciales {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    #footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       }
-    .menu-de-promociones{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(3,auto);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        grid-template-areas: 
-        "Ofertas"
-        "Descuento-a"
-        "Descuento-B"
-        "Descuento-C" ;
-        gap: 10px;
-       }
-    .menu-de-dermocosmetica{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(2,auto);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        grid-template-areas:
-        "Dermocosmética"
-        "Rostro" 
-        "Solar"
-        "Corporal" 
-        "Cabello" ;
-        gap: 10px;
-    }
-    .menu-de-cosmetologia{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(2,auto);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        grid-template-areas:
-        "Belleza"
-        "Maquillaje" 
-        "Fragancias"
-        "Piel "
-
-    }
-    .menu-cuidado-personal{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(2,auto);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        grid-template-areas:
-        "Cuidado-Personal"
-        "Adultos"
-        "Salud-Oral"
-        "Higiene-Personal"
-
-    }   
-
-    
-    
-    
-    
-    
-    
-}
+@media only screen and (max-width: 576px) {
+  body {
+    height: 400px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; }
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .comprar {
+    font-family: "poppins", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    width: 100%;
+    margin: px auto;
+    border: 1px groove black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; }
+  .info-contacto {
+    display: flex;
+    text-align: center;
+    align-items: center; }
+  .contactanos {
+    display: flex;
+    flex-direction: column; }
+  .comerciales {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+  #footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .menu-de-promociones {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas: "Ofertas" "Descuento-a" "Descuento-B" "Descuento-C";
+    gap: 10px; }
+  .menu-de-dermocosmetica {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas: "Dermocosmética" "Rostro"  "Solar" "Corporal"  "Cabello";
+    gap: 10px; }
+  .menu-de-cosmetologia {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas: "Belleza" "Maquillaje"  "Fragancias" "Piel "; }
+  .menu-cuidado-personal {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas: "Cuidado-Personal" "Adultos" "Salud-Oral" "Higiene-Personal"; } }

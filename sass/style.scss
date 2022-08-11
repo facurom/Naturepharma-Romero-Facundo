@@ -1,3 +1,5 @@
+$colorPrincipal: aliceblue;
+$relleno: 20px;
 *{
     margin: 0;
     
@@ -5,11 +7,12 @@
     
     box-sizing: border-box;
     
-    }
+}
     
 body {
-    background-color: aliceblue;
+    background-color:$colorPrincipal;
     font-family: "Roboto", Sans-Serif;
+    padding: $relleno;
 }
 
 header{
