@@ -5,26 +5,24 @@
   box-sizing: border-box; }
 
 body {
-  background-color: aliceblue;
+  background-color: #85b4e4;
   font-family: "Roboto", Sans-Serif;
-  padding: 20px; }
+  padding: 40px; }
 
 header {
   display: flex;
-  color: aliceblue;
-  margin: 15px 20px 25px 30px;
-  background-color: #10eca3; }
-
-.navbar {
-  display: flex;
-  list-style-type: none;
-  padding: 30px;
-  text-align: center;
-  width: 100%; }
-
-.collapsenavbar-collapse {
-  justify-content: flex-end;
-  flex-grow: initial; }
+  justify-content: space-around;
+  width: 100%;
+  color: aliceblue; }
+  header__navbar__container-fluid {
+    display: flex;
+    flex-grow: initial;
+    padding: 30px;
+    text-align: center;
+    gap: 1em;
+    margin: 15px 20px 25px 30px; }
+    header__navbar__container-fluid:hover {
+      color: #0de44d; }
 
 .imagenes:hover {
   height: 300px; }
@@ -44,18 +42,6 @@ header {
     transform: scale(1); }
   100% {
     transform: scale(2); } }
-
-ul {
-  display: flex;
-  font-family: 'Edu SA Beginner', cursive;
-  padding-left: 1rem;
-  justify-content: flex-start; }
-
-ul li {
-  color: greenyellow;
-  font-size: 25px;
-  margin: 8px 20px;
-  text-decoration: none; }
 
 .article-info {
   display: flex;
@@ -96,6 +82,10 @@ ul li {
   justify-content: space-around;
   justify-items: center;
   font-family: 'Noto Serif', serif; }
+
+.img-main {
+  height: 250px;
+  width: 250px; }
 
 .imagen {
   display: flex; }
@@ -401,7 +391,7 @@ i {
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-template-areas: "Dermocosmética" "Rostro"  "Solar" "Corporal"  "Cabello";
+    grid-template-areas: "Dermocosmética" "Rostro" "Solar" "Corporal" "Cabello";
     gap: 10px; }
   .menu-de-cosmetologia {
     display: grid;
@@ -409,7 +399,7 @@ i {
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-template-areas: "Belleza" "Maquillaje"  "Fragancias" "Piel "; }
+    grid-template-areas: "Belleza" "Maquillaje" "Fragancias" "Piel "; }
   .menu-cuidado-personal {
     display: grid;
     grid-template-columns: 100%;
@@ -477,7 +467,7 @@ i {
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-template-areas: "Dermocosmética" "Rostro"  "Solar" "Corporal"  "Cabello";
+    grid-template-areas: "Dermocosmética" "Rostro" "Solar" "Corporal" "Cabello";
     gap: 10px; }
   .menu-de-cosmetologia {
     display: grid;
@@ -485,7 +475,7 @@ i {
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-template-areas: "Belleza" "Maquillaje"  "Fragancias" "Piel "; }
+    grid-template-areas: "Belleza" "Maquillaje" "Fragancias" "Piel "; }
   .menu-cuidado-personal {
     display: grid;
     grid-template-columns: 100%;
