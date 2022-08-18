@@ -1,5 +1,6 @@
 $colorPrincipal: rgb(133, 180, 228);
-$relleno: 40px;
+$relleno: 10px;
+$relleno-2: 1px;
 
 * {
     margin: 0;
@@ -19,25 +20,27 @@ body {
 header {
     display: flex;
     justify-content: space-around;
+    font-size: 20px;
     width: 100%;
+    margin-top: 5px;
     color: aliceblue;
 
-    &__navbar {
-        &__container-fluid {
-            display: flex;
+    .container-fluid {
 
-            flex-grow: initial;
-            padding: 30px;
-            text-align: center;
+        display: flex;
+        width: 100%;
 
-            &:hover {
-                color: #0de44d
-            }
 
-            gap: 1em;
-            margin: 15px 20px 25px 30px;
+        padding: $relleno;
+        text-align: center;
+
+        &:hover {
+            color: #0de44d
         }
-        
+
+        gap: 15em;
+        margin: 15px 40px 25px 30px;
+
     }
 
 
@@ -125,13 +128,24 @@ header {
     font-family: 'Noto Serif', serif;
 
 }
+
 @mixin img-main($alto, $ancho) {
     height: $alto;
     width: $ancho;
 }
-.img-main{
-    @include img-main(250px,250px )
+
+@mixin crear-flexbox ($justify) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
+
+.img-main {
+    @include img-main(250px, 250px)
+}
+
 .imagen {
     display: flex;
 
@@ -450,29 +464,27 @@ i {
 
     body {
         height: 400px;
-        flex-direction: column;
+
         text-align: center;
-        align-items: center;
+
+        @include crear-flexbox(center)
     }
 
     header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+        padding: $relleno-2;
+        width: 100%;
 
-    nav ul {
+        font-size: 30px;
 
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        nav {
+            @include crear-flexbox(center) ul {
+                @include crear-flexbox(center) li {
+                    @include crear-flexbox(center) a {
+                        @include crear-flexbox(center)
+                    }
+                }
+            }
+        }
     }
 
     .info-contacto {
@@ -574,30 +586,26 @@ i {
 @media only screen and (max-width:576px) {
 
     body {
-        height: 400px;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
+
+
+        @include crear-flexbox(center)
     }
 
     header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+        padding: $relleno-2;
+        width: 100%;
+        font-size: 30px;
 
-    nav ul {
 
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        nav {
+            @include crear-flexbox(center) ul {
+                @include crear-flexbox(center) li {
+                    @include crear-flexbox(center) a {
+                        @include crear-flexbox(center)
+                    }
+                }
+            }
+        }
     }
 
     .comprar {
