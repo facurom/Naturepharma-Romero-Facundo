@@ -11,20 +11,18 @@ body {
 
 header {
   display: flex;
-  justify-content: space-around;
-  font-size: 20px;
-  width: 100%;
-  margin-top: 5px;
-  color: aliceblue; }
-  header .container-fluid {
+  color: aliceblue;
+  margin: 15px 20px 25px 30px;
+  background-color: #10eca3; }
+  header .navbar {
     display: flex;
-    width: 100%;
-    padding: 10px;
+    list-style-type: none;
+    padding: 30px;
     text-align: center;
-    gap: 15em;
-    margin: 15px 40px 25px 30px; }
-    header .container-fluid:hover {
-      color: #0de44d; }
+    width: 100%; }
+  header .container-fluid {
+    justify-content: flex-end;
+    flex-grow: initial; }
 
 .imagenes:hover {
   height: 300px; }
@@ -86,8 +84,12 @@ header {
   font-family: 'Noto Serif', serif; }
 
 .img-main {
-  height: 250px;
+  height: 300px;
   width: 250px; }
+
+.img-logo {
+  height: 100px;
+  width: 50px; }
 
 .imagen {
   display: flex; }
@@ -338,31 +340,20 @@ i {
 
 @media only screen and (max-width: 768px) {
   body {
-    height: 400px;
-    text-align: center;
-    display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center; }
-  header {
-    padding: 1px;
-    width: 100%;
-    font-size: 30px; }
-    header nav {
-      display: flex;
+    body header {
       flex-direction: column;
-      align-items: center; }
-      header nav ul {
-        display: flex;
+      align-items: center;
+      text-align: center; }
+      body header nav {
         flex-direction: column;
-        align-items: center; }
-        header nav ul li {
+        text-align: center; }
+        body header nav .container-fluid {
           display: flex;
           flex-direction: column;
           align-items: center; }
-          header nav ul li a {
-            display: flex;
-            flex-direction: column;
-            align-items: center; }
   .info-contacto {
     width: 100%; }
   .contactanos {
@@ -420,29 +411,23 @@ i {
 
 @media only screen and (max-width: 576px) {
   body {
-    display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center; }
-  header {
-    padding: 1px;
-    width: 100%;
-    font-size: 30px; }
-    header nav {
-      display: flex;
+    body header {
       flex-direction: column;
-      align-items: center; }
-      header nav ul {
-        display: flex;
+      align-items: center;
+      text-align: center; }
+      body header nav {
         flex-direction: column;
-        align-items: center; }
-        header nav ul li {
+        text-align: center; }
+        body header nav .container-fluid {
           display: flex;
           flex-direction: column;
           align-items: center; }
-          header nav ul li a {
-            display: flex;
-            flex-direction: column;
-            align-items: center; }
+  .imagen-logo {
+    height: 200px;
+    width: 300px; }
   .comprar {
     font-family: "poppins", sans-serif;
     font-size: 25px;

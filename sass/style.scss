@@ -19,27 +19,27 @@ body {
 
 header {
     display: flex;
-    justify-content: space-around;
-    font-size: 20px;
-    width: 100%;
-    margin-top: 5px;
     color: aliceblue;
+    margin: 15px 20px 25px 30px;
 
-    .container-fluid {
+    background-color: rgb(16, 236, 163);
 
+    .navbar {
         display: flex;
+        list-style-type: none;
+        padding: 30px;
+        text-align: center;
         width: 100%;
 
+    }
 
-        padding: $relleno;
-        text-align: center;
+    .container-fluid {
+        justify-content: flex-end;
+        flex-grow: initial;
 
-        &:hover {
-            color: #0de44d
-        }
 
-        gap: 15em;
-        margin: 15px 40px 25px 30px;
+
+
 
     }
 
@@ -134,6 +134,11 @@ header {
     width: $ancho;
 }
 
+@mixin imagen-logo($ancho, $alto) {
+    height: $alto;
+    width: $ancho;
+}
+
 @mixin crear-flexbox ($justify) {
     display: flex;
     flex-direction: column;
@@ -143,7 +148,11 @@ header {
 
 
 .img-main {
-    @include img-main(250px, 250px)
+    @include img-main(300px, 250px)
+}
+
+.img-logo {
+    @include imagen-logo(50px, 100px)
 }
 
 .imagen {
@@ -463,29 +472,30 @@ i {
 @media only screen and (max-width:768px) {
 
     body {
-        height: 400px;
-
+        
+        flex-direction: column;
         text-align: center;
+        align-items: center;
+        header {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
 
-        @include crear-flexbox(center)
-    }
 
-    header {
-        padding: $relleno-2;
-        width: 100%;
-
-        font-size: 30px;
-
-        nav {
-            @include crear-flexbox(center) ul {
-                @include crear-flexbox(center) li {
-                    @include crear-flexbox(center) a {
-                        @include crear-flexbox(center)
-                    }
+            nav {
+                
+                flex-direction: column;
+                text-align: center;
+                .container-fluid {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                 }
             }
         }
     }
+
+
 
     .info-contacto {
         width: 100%;
@@ -586,27 +596,37 @@ i {
 @media only screen and (max-width:576px) {
 
     body {
+        
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        
+        header {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
 
 
-        @include crear-flexbox(center)
-    }
-
-    header {
-        padding: $relleno-2;
-        width: 100%;
-        font-size: 30px;
-
-
-        nav {
-            @include crear-flexbox(center) ul {
-                @include crear-flexbox(center) li {
-                    @include crear-flexbox(center) a {
-                        @include crear-flexbox(center)
-                    }
+            nav {
+                
+                flex-direction: column;
+                text-align: center;
+                .container-fluid {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                 }
             }
         }
     }
+
+    
+    .imagen-logo {
+        @include img-main(200px, 300px)
+    }
+
+    
 
     .comprar {
         font-family: "poppins", sans-serif;
