@@ -33,7 +33,8 @@ header {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  transition: all .1s ease-in-out; }
+  transition: all .1s ease-in-out;
+  animation: banner 28s infinite linear; }
   .banner .banner-content {
     margin: 0;
     padding: 0;
@@ -62,6 +63,46 @@ header {
     background-color: #fff;
     color: #333; }
 
+.banner-2 {
+  width: 100%;
+  height: 200px;
+  background-image: url(../assetts/Img/edz-norton-_nug8KZ8KUQ-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all .1s ease-in-out;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: rgba(0, 22, 40, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .banner-2 .banner-2 h1 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    font-size: 40px;
+    text-align: center; }
+
+@keyframes banner {
+  0% {
+    background-image: url(../assetts/Img/michaela-murphy--nR1X5NYmYo-unsplash.jpg); }
+  25% {
+    background-image: url(../assetts/Img/michaela-murphy--nR1X5NYmYo-unsplash.jpg); }
+  26% {
+    background-image: url(../assetts/Img/organic-3.jpg); }
+  50% {
+    background-image: url(../assetts/Img/organic-3.jpg); }
+  51% {
+    background-image: url(../assetts/Img/katherine-hanlon-bd_fCZhy_W8-unsplash.jpg); }
+  75% {
+    background-image: url(../assetts/Img/katherine-hanlon-bd_fCZhy_W8-unsplash.jpg); }
+  76% {
+    background-image: url(../assetts/Img/vya-naturals-WbFFNqHKBiY-unsplash.jpg); }
+  100% {
+    background-image: url(../assetts/Img/vya-naturals-WbFFNqHKBiY-unsplash.jpg); } }
+
 .imagenes:hover {
   height: 300px; }
 
@@ -71,15 +112,6 @@ header {
   animation-timing-function: ease-out;
   animation-delay: 3s;
   animation-iteration-count: 1; }
-
-@keyframes comprar {
-  0% {
-    transform: scale(0.5);
-    border-radius: 100%; }
-  50% {
-    transform: scale(1); }
-  100% {
-    transform: scale(2); } }
 
 .article-info {
   display: flex;
