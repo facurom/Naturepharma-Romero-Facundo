@@ -12,22 +12,25 @@ $relleno-2: 1px;
 
 body {
     background-color: $colorPrincipal;
-    font-family: sans-serif
+    font-family: sans-serif;
+    
 }
 
 .header {
-    background-color: rgb(16, 236, 163);
+    
     height: 80px;
-    width: 100vw;
-    position: fixed;
+    width: 100%;
+    position: static;
     top: 0;
     left: 0;
+    
 
     .nav{
         display: flex;
         justify-content: space-between;
-        max-width: 992px;
+        
         margin: 0 auto;
+        background-color: rgb(137, 163, 155);
     }
     .nav-link{
         color: white;
@@ -63,7 +66,7 @@ body {
         padding: 8px 12px;
         border-radius: 3px;
     }
-    .nav-toogle{
+    .nav-toggle{
       color: white;
       background: none;
       border: none;
@@ -71,9 +74,12 @@ body {
       padding: 0 20px;
       line-height: 60px;
       display: none;
+      cursor: pointer;
 
     }
-    
+    .nav-menu_visible{
+        left: 0;
+    }
     
 
 }
@@ -306,7 +312,7 @@ body {
 
     width: 90%;
     height: 600px;
-    margin: 40px auto;
+    margin: 80px auto;
     border: 1px groove rgb(248, 244, 244);
 
     display: grid;
@@ -360,7 +366,8 @@ body {
 
     width: 90%;
     height: 600px;
-    margin: 40px auto;
+    margin: 80px auto;
+    
     border: 1px groove rgb(248, 244, 244);
 
     display: grid;
@@ -420,7 +427,7 @@ body {
 
     width: 90%;
     height: 600px;
-    margin: 40px auto;
+    margin: 80px auto;
     border: 1px groove rgb(248, 244, 244);
 
     display: grid;
@@ -473,7 +480,7 @@ body {
 
     width: 90%;
     height: 600px;
-    margin: 40px auto;
+    margin: 80px auto;
     border: 1px groove rgb(248, 244, 244);
 
     display: grid;
@@ -523,10 +530,12 @@ body {
 .formulario-contacto form {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 80px auto;
 }
 
-.contenedor-contacto {
-    background-color: rgb(129, 190, 218);
+.body-contact{
+    
+    margin: 80px auto;
 }
 
 .formulario-contacto {
@@ -650,7 +659,7 @@ i {
                     background: none;
                     color: #23b9df;
                 }
-                .nav-toogle{
+                .nav-toggle{
                     
                     display: block;
               
@@ -765,36 +774,74 @@ i {
 @media only screen and (max-width:576px) {
 
     body {
+       
+        padding-top: 70px;
+         
+ 
+         .header {
+             
+             height: 60px;
+            
+ 
+ 
+             .nav{
+                
+ 
+                
+ 
+                 
+             
+                 .logo{
+                     font-size: 25px;
+                     
+                     padding: 0 20px;
+                     line-height: 60px;
+                 }
+             
+                 .nav-menu{
+                     flex-direction: column;
+                     align-items: center;
+                     margin-right: 20px;
+                     background-color: #333;
+                     margin: 0;
+                     position:fixed;
+                     left: 0;
+                     top: 60px;
+                     width: 100%;
+                     padding: 20px 0;
+                     height: calc(100%-60px);
+                     overflow-y: auto;
+                     left: 100%;
+                     transition: left 0.3s;
+ 
+         
+                 }
+             
+                 .nav-menu-item{
+                  line-height: 70px;
+                    
+                 }
+                 .nav-menu-link:hover{
+                     background: none;
+                     color: #23b9df;
+                 }
+                 .nav-toggle{
+                     
+                     display: block;
+               
+                 }
+                 .nav-menu_visible{
+                     left: 0;
+ 
+                 }
+ 
+             }
+         }
+     }
+ 
 
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
 
-        header {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-
-
-
-            nav {
-
-                flex-direction: column;
-                text-align: center;
-
-                .container-fluid {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-            }
-        }
-    }
-
-
-    .imagen-logo {
-        @include img-main(200px, 300px)
-    }
+   
 
 
 
