@@ -1,6 +1,7 @@
 $colorPrincipal: rgb(203, 220, 236);
 $relleno: 10px;
 $relleno-2: 1px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap');
 
 
 * {
@@ -527,114 +528,82 @@ body {
     font-family: "poppins", sans-serif;
 }
 
-.content{
-    max-width: 1170px;
-    margin-top: 90px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 2px;
-    padding: 1.5em;
-    width: 100%;
-}
-.logo{
-    text-align: center;
-    font-size: 3em;
-}
-.logo span{
-    color: #0bca4b;
-}
-.contact-wrapper{
-    width: 100%;
-    box-shadow: 0 0 20px 0 rgba($color: #0f0f0f, $alpha: 1.0);
-}
-.contact-wrapper > *{
-    padding: 1em;
-}
-.contact-form{
-    background:#333 ;
-    color: white;
-}
-
-.contact-form form p{
-    margin: 0;
-    padding: 1em;
-
-}
-.contact-form form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.contact-form form .block{
- grid-column: 1 / 3;
-}
-.contact-form form button,
-.contact-form form input,
-.contact-form form textarea{
-    
-    padding: 2em;
-    border: none;
-    background: none;
-    outline: 0;
-    color: #fff;
-    border-bottom: 1px solid #0bca4b;
-}
-.formulario-contacto form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 80px auto;
-    background: none;
-    outline: 0;
-    color: #fff;
-    border-bottom: 1px solid #21cc93;
-}
-.contact-form form button{
-    background: #21cc93;
-    border: 0;
-    text-transform: uppercase;
-    padding: 1em;
-}
-.contact-form form button:hover,
-.contact-form form button:focus{
-    background: #0bca4b;
-    color: #000;
-    transition: background-color 1s ease-out;
-    outline: 0;
-}
-
 .body-contact{
-    
-    margin: 80px auto;
-}
-
-.formulario-contacto {
-    background-color: #8be2a5;
-}
-
-.formulario-contacto form .bloque {
-    grid-column: 1/3;
-}
-
-.formulario-contacto form p {
-    margin: 0;
-    padding: 1em;
-}
-
-.formulario-contacto form textarea {
-    width: 100%;
-    padding: .7rem;
-    border: none;
-    background: none;
-    outline: none;
-    border-bottom: 1px solid #f7f6f6;
     color: #fff;
+    margin-top: 150px;
+    padding: 0 1.5rem ;
+    .contenido{
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        .nombre-empresa{
+            margin-bottom: 1rem;
+            color: black;
+            text-align: center;
+            font-size: 3rem;
+
+        }
+        .nombre-empresa span{
+            color: #21cc93
+        };
+        .contenedor-contacto{
+            box-shadow: 0 0 20px 0 rgba($color: #4ef097, $alpha: 1.0);
+        }
+        .contenedor-contacto > *{
+            padding: 1rem;
+
+        }
+        .formulario-contacto{
+            background-color: #222222;
+
+        }
+        .formulario-contacto form{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .formulario-contacto form .bloque {
+            grid-column: 1/3;
+        }
+        .formulario-contacto form p{
+            margin: 0;
+            padding: 1em;
+
+        }
+        .formulario-contacto form button,
+        .formulario-contacto form input,
+        .formulario-contacto form textarea{
+            width:  100%;
+            padding: .7rem;
+            border: none;
+            background: none;
+            outline: none;
+            border-bottom: 1px solid #0de44d;
+            color: #fff;
+
+
+        }
+        .formulario-contacto form button{
+            background-color: #0de44d;
+            border: 0;
+            text-transform: uppercase;
+            padding: 1rem;
+        }
+    }   
 }
 
-.formulario-contacto form button {
-    background-color: #e7ecec;
-    border: 0;
-    text-transform: uppercase;
-    padding: 1rem;
-}
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
 .info-contacto {
     background-color: #000;
@@ -744,9 +713,23 @@ i {
     }
 
 
-
+    .body-contact{
+        height: 100vh;
+        padding: 0 4rem;
+    }
+    .contenedor-contacto{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
     .info-contacto {
         width: 100%;
+    }
+    .contenedor-contacto > *{
+        padding: 2rem;
+    }
+    .info-contacto ul {
+      padding: 1rem;
+      text-align: left;
     }
     
 
@@ -846,18 +829,18 @@ i {
 
     body {
        
-        padding-top: 70px;
+        padding-top: 0px;
          
  
          .header {
              
-             height: 60px;
+             height: 30px;
             
  
  
              .nav{
                 
- 
+                 width: 100%;
                 
  
                  
@@ -933,7 +916,24 @@ i {
 
 
     }
-
+    .body-contact{
+        height: 100vh;
+        padding: 0 4rem;
+    }
+    .contenedor-contacto{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .info-contacto {
+        width: 100%;
+    }
+    .contenedor-contacto > *{
+        padding: 2rem;
+    }
+    .info-contacto ul {
+      padding: 1rem;
+      text-align: left;
+    }
     .info-contacto {
 
         display: flex;
