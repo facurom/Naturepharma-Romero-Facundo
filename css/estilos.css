@@ -598,14 +598,24 @@ i {
     align-items: center; }
   .body-contact {
     height: 100vh;
-    padding: 0 4rem; }
+    padding: 0 1.5rem; }
+  .nombre-empresa {
+    margin-bottom: 1rem;
+    color: black;
+    text-align: center;
+    font-size: 3rem; }
   .contenedor-contacto {
     display: grid;
-    grid-template-columns: 2fr 1fr; }
+    grid-template-columns: 1fr 1fr; }
   .info-contacto {
     width: 100%; }
+  .formulario-contacto form p {
+    margin: 0;
+    padding: 1em; }
+  .formulario-contacto form .bloque {
+    grid-column: 1/3; }
   .contenedor-contacto > * {
-    padding: 2rem; }
+    padding: 1rem; }
   .info-contacto ul {
     padding: 1rem;
     text-align: left; }
