@@ -209,6 +209,7 @@ body {
   width: 90%;
   height: 600px;
   margin: 80px auto;
+  margin-top: 150px;
   border: 1px groove #f8f4f4;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -251,6 +252,7 @@ body {
   width: 90%;
   height: 600px;
   margin: 80px auto;
+  margin-top: 150px;
   border: 1px groove #f8f4f4;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -300,6 +302,7 @@ body {
   width: 90%;
   height: 600px;
   margin: 80px auto;
+  margin-top: 150px;
   border: 1px groove #f8f4f4;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -342,6 +345,7 @@ body {
   width: 90%;
   height: 600px;
   margin: 80px auto;
+  margin-top: 150px;
   border: 1px groove #f8f4f4;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
