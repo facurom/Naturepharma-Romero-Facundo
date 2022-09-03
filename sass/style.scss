@@ -722,19 +722,39 @@ i {
         height: 100vh;
         padding: 0 4rem;
     }
-    .contenedor-contacto{
+    .formulario-contacto form{
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .formulario-contacto form .bloque{
+        grid-column: 1/3;
     }
     .info-contacto {
         width: 100%;
+    }
+    .formulario-contacto form p{
+        margin: 0;
+        padding: 1em;
+    }
+    .formulario-contacto form button,
+    .formulario-contacto form input,
+    .formulario-contacto form textarea{
+        width: 100%;
+        padding: 2rem;
+        border: none;
+        background: none;
+        border-bottom: 1px solid #4adf7b;
+        color: #fff;
     }
     .contenedor-contacto > *{
         padding: 2rem;
     }
     .info-contacto ul {
       padding: 1rem;
+      margin-bottom: 20px;
       text-align: left;
+      display: flex;
+      flex-direction: column;
     }
     
 
@@ -770,6 +790,8 @@ i {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 20px;
+        margin-top: 50px;
     }
 
     .menu-de-promociones {
@@ -896,10 +918,54 @@ i {
  
              }
          }
-     }
+    }
+    .body-contact{
+        height: 100vh;
+        padding: 0 4rem;
+    }
+    .formulario-contacto form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .formulario-contacto form .bloque{
+        grid-column: 1/3;
+    }
+    .info-contacto {
+        width: 100%;
+    }
+    .formulario-contacto form p{
+        margin: 0;
+        padding: 1em;
+    }
+    .formulario-contacto form button,
+    .formulario-contacto form input,
+    .formulario-contacto form textarea{
+        width: 100%;
+        padding: 2rem;
+        border: none;
+        background: none;
+        border-bottom: 1px solid #4adf7b;
+        color: #fff;
+    }
+    .contenedor-contacto > *{
+        padding: 2rem;
+    }
+    .info-contacto ul {
+      padding: 1rem;
+      margin-bottom: 20px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+    }
+    
+
+    .contactanos {
+        display: flex;
+        flex-direction: column;
+    }
  
 
-
+    
    
 
 
@@ -921,10 +987,7 @@ i {
 
 
     }
-    .body-contact{
-        height: 100vh;
-        padding: 0 1.5rem;
-    }
+    
    
     .nombre-empresa {
         margin-bottom: 1rem;
@@ -932,10 +995,7 @@ i {
         text-align: center;
         font-size: 3rem;
     }
-    .contenedor-contacto{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+   
     .info-contacto {
         width: 100%;
     }
@@ -943,9 +1003,7 @@ i {
         margin: 0;
         padding: 1em;
     }
-    .formulario-contacto form .bloque {
-        grid-column: 1/3;
-    }  
+    
     .contenedor-contacto > *{
         padding: 1rem;
     }
