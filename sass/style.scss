@@ -776,9 +776,18 @@ i {
         flex-direction: column;
         text-align: center;
         align-items: center;
+        justify-content: center;
+        .comprar-1{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
 
 
     }
+    
 
     .comerciales {
         width: 100%;
@@ -983,6 +992,8 @@ i {
         flex-direction: column;
         text-align: center;
         align-items: center;
+        justify-content: center;
+
 
 
 

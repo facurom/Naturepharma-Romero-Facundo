@@ -531,7 +531,14 @@ i {
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
+    .comprar .comprar-1 {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center; }
   .comerciales {
     width: 100%;
     display: flex;
@@ -651,7 +658,8 @@ i {
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
   .nombre-empresa {
     margin-bottom: 1rem;
     color: black;
