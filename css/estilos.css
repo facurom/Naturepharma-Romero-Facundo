@@ -348,7 +348,7 @@ body {
   width: 90%;
   height: 600px;
   margin: 80px auto;
-  margin-top: 150px;
+  margin-top: 50px;
   border: 1px groove #f8f4f4;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -384,6 +384,19 @@ body {
   font-size: 30px;
   grid-area: Descuento-C;
   font-family: "poppins", sans-serif; }
+
+.promociones-1 {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px; }
+  .promociones-1 .nombre-empresa-1 {
+    margin-bottom: 1rem;
+    color: black;
+    text-align: center;
+    font-size: 3rem; }
+  .promociones-1 .nombre-empresa-1 span {
+    color: #21cc93; }
 
 .body-contact {
   color: #fff;
@@ -491,6 +504,13 @@ i {
         display: block; }
       body .header .nav .nav-menu_visible {
         left: 0; }
+  .promociones-1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px; }
+    .promociones-1 .nombre-empresa-1 {
+      margin-bottom: 1rem;
+      text-align: center; }
   .body-contact {
     height: 100vh;
     padding: 0 4rem; }
@@ -651,6 +671,13 @@ i {
   .contactanos {
     display: flex;
     flex-direction: column; }
+  .promociones-1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px; }
+    .promociones-1 .nombre-empresa-1 {
+      margin-bottom: 1rem;
+      text-align: center; }
   .comprar {
     font-family: "poppins", sans-serif;
     font-size: 25px;
