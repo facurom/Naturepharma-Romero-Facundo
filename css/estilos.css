@@ -182,7 +182,9 @@ body {
   display: flex;
   justify-content: space-around;
   justify-items: center;
-  font-family: 'Noto Serif', serif; }
+  font-family: 'Noto Serif', serif;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .img-main {
   height: 200px;
