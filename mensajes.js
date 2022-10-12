@@ -14,3 +14,14 @@ function calcularPrecioFinal (precio, iva){
 }
 let precioFinal = calcularPrecioFinal (precioProd, ivaCalculado);
 console.log ("El precio final con iva incluido eds $"+precioFinal);
+
+for(let i=1; i<=3;i++){
+    let usuario=prompt ("Ingresa nombre de usuario");
+    let contrasenia=prompt("Ingresa contraseña para"+usuario);
+    if((usuario=="Sofi123")&&(contrasenia=="Coder123")){
+        console.log("Bienvenida Sofi!");
+        break;
+    }else{
+        console.log("Usuario y/o contraseña invalidos, restan "+(3-i)+" intentos");
+    }
+}
