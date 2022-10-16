@@ -1,4 +1,4 @@
-alert('Bienvenido');
+/*alert('Bienvenido');
 if (confirm('¿Deseas que te salude por tu nombre?')) {
     alert (`Hola ${prompt('Cual es tu nombre?')}!`);
 }
@@ -24,4 +24,4 @@ for(let i=1; i<=3;i++){
     }else{
         console.log("Usuario y/o contraseña invalidos, restan "+(3-i)+" intentos");
     }
-}
+}*/
