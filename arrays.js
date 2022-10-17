@@ -26,7 +26,7 @@ const productos = [
 for(const producto of productos){
     console.log(producto.nombre+"Precio $:"+producto.precio);
 }
-class productosCremas{
+class productoCream{
     constructor(nombre, precio){
         this.nombre = nombre.toUpperCase();
         this.precio = parseFloat(precio);
@@ -37,10 +37,10 @@ class productosCremas{
     }
 }
 
-const productosCremas = [];
-productosCremas.push(new productosCremas("Crema hidratante corporal Cicatricure","1200"));
-productosCremas.push(new productosCremas("Hidratante corporal todo dia","1350"));
-productosCremas.push(new productosCremas("Crema Cicatricure firmeza","2500"));
-console.log(productosCremas);
-for(const producto of productosCremas)
+const productosCream = [];
+productosCream.push(new productoCream("Crema hidratante corporal Cicatricure","1200"));
+productosCream.push(new productoCream("Hidratante corporal todo dia","1350"));
+productosCream.push(new productoCream("Crema Cicatricure firmeza","2500"));
+console.log(productosCream);
+for(const producto of productosCream)
 producto.sumaIva();
