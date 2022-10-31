@@ -27,7 +27,7 @@ const productos = [
     },
 
 ];
-let carrito = [] ;
+let carrito = [];
 productos.forEach((product)=>{
     let content = document.createElement("div");
     content.innerHTML = `
@@ -35,7 +35,7 @@ productos.forEach((product)=>{
       <h3>${product.nombre}</h3>
       <p>${product.precio} $</p>
     `;
-    shopContent.append(content);
+    shopContent.appendChild(content);
     let comprar = document.createElement("button")
     comprar.inn
 });
