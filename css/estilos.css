@@ -1,60 +1,82 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  font-family: border-box; }
+  font-family: border-box;
+}
 
 body {
   background-color: #cbdcec;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+}
 
 .header {
   height: 80px;
   width: 100%;
   position: static;
   top: 0;
-  left: 0; }
-  .header .nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    background-color: #89a39b; }
-  .header .nav-link {
-    color: white;
-    text-decoration: none; }
-  .header .logo {
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0 40px;
-    line-height: 80px; }
-  .header .nav-menu {
-    display: flex;
-    margin-right: 40px;
-    list-style: none; }
-  .header .nav-menu-item {
-    font-size: 18px;
-    margin: 0 10px;
-    line-height: 80px;
-    text-transform: uppercase;
-    width: max-content; }
-  .header .nav-menu-link:hover {
-    background-color: #21cc93;
-    transition: 0.5s; }
-  .header .nav-menu-link {
-    padding: 8px 12px;
-    border-radius: 3px; }
-  .header .nav-toggle {
-    color: white;
-    background: none;
-    border: none;
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 60px;
-    display: none;
-    cursor: pointer; }
-  .header .nav-menu_visible {
-    left: 0; }
+  left: 0;
+}
+
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: #89a39b;
+}
+
+.header .nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.header .logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 80px;
+}
+
+.header .nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.header .nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.header .nav-menu-link:hover {
+  background-color: #21cc93;
+  transition: 0.5s;
+}
+
+.header .nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.header .nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+  cursor: pointer;
+}
+
+.header .nav-menu_visible {
+  left: 0;
+}
 
 .banner {
   width: 100%;
@@ -64,34 +86,43 @@ body {
   background-attachment: fixed;
   background-position: center;
   transition: all .1s ease-in-out;
-  animation: banner 28s infinite linear; }
-  .banner .banner-content {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    background-color: rgba(0, 22, 40, 0.6);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .banner .banner-content h1 {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 30px;
-    font-size: 40px;
-    text-align: center; }
-  .banner .banner-content a {
-    text-decoration: none;
-    color: #fff;
-    padding: 9px 20px;
-    border: 1px solid #fff;
-    text-transform: uppercase;
-    transition: all .3s ease-in-out; }
-  .banner .banner-content a:hover {
-    background-color: #fff;
-    color: #333; }
+  animation: banner 28s infinite linear;
+}
+
+.banner .banner-content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(0, 22, 40, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .banner-content h1 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.banner .banner-content a {
+  text-decoration: none;
+  color: #fff;
+  padding: 9px 20px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  transition: all .3s ease-in-out;
+}
+
+.banner .banner-content a:hover {
+  background-color: #fff;
+  color: #333;
+}
 
 .banner-2 {
   width: 100%;
@@ -107,52 +138,75 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  .banner-2 .banner-2 h1 {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 30px;
-    font-size: 40px;
-    text-align: center; }
+  align-items: center;
+}
+
+.banner-2 .banner-2 h1 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+  font-size: 40px;
+  text-align: center;
+}
 
 @keyframes banner {
   0% {
-    background-image: url(../assetts/Img/michaela-murphy--nR1X5NYmYo-unsplash.jpg); }
+    background-image: url(../assetts/Img/michaela-murphy--nR1X5NYmYo-unsplash.jpg);
+  }
+
   25% {
-    background-image: url(../assetts/Img/michaela-murphy--nR1X5NYmYo-unsplash.jpg); }
+    background-image: url(../assetts/Img/michaela-murphy--nR1X5NYmYo-unsplash.jpg);
+  }
+
   26% {
-    background-image: url(../assetts/Img/organic-3.jpg); }
+    background-image: url(../assetts/Img/organic-3.jpg);
+  }
+
   50% {
-    background-image: url(../assetts/Img/organic-3.jpg); }
+    background-image: url(../assetts/Img/organic-3.jpg);
+  }
+
   51% {
-    background-image: url(../assetts/Img/katherine-hanlon-bd_fCZhy_W8-unsplash.jpg); }
+    background-image: url(../assetts/Img/katherine-hanlon-bd_fCZhy_W8-unsplash.jpg);
+  }
+
   75% {
-    background-image: url(../assetts/Img/katherine-hanlon-bd_fCZhy_W8-unsplash.jpg); }
+    background-image: url(../assetts/Img/katherine-hanlon-bd_fCZhy_W8-unsplash.jpg);
+  }
+
   76% {
-    background-image: url(../assetts/Img/vya-naturals-WbFFNqHKBiY-unsplash.jpg); }
+    background-image: url(../assetts/Img/vya-naturals-WbFFNqHKBiY-unsplash.jpg);
+  }
+
   100% {
-    background-image: url(../assetts/Img/vya-naturals-WbFFNqHKBiY-unsplash.jpg); } }
+    background-image: url(../assetts/Img/vya-naturals-WbFFNqHKBiY-unsplash.jpg);
+  }
+}
 
 .imagenes:hover {
-  height: 300px; }
+  height: 300px;
+}
 
 .img-main {
   animation-name: comprar;
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
   animation-delay: 3s;
-  animation-iteration-count: 1; }
+  animation-iteration-count: 1;
+}
 
 .article-info {
   display: flex;
   justify-content: center;
   font-size: 30px;
-  text-align: center; }
+  text-align: center;
+}
 
 #fondo {
   background-image: url(../assetts/Icons/v870-tang-30.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .buttom {
   background-color: #0de44d;
@@ -160,23 +214,65 @@ body {
   font-size: 14px;
   padding: 8px 35px;
   border-radius: 25px;
-  transition: all 2s; }
+  transition: all 2s;
+}
 
 .buttom:hover {
   height: 50px;
-  background-color: #0bc041; }
+  background-color: #0bc041;
+}
 
 .comerciales {
   display: flex;
   justify-content: space-around;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
+.shop-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+ }
+ .card{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+ .card > img{
+  width: 90%;
+  height: 250px;
+ } 
+
+  .price {
+    color: black;
+    font-size: 22px;
+  }
+  .card button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    border-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  .card button:hover{
+    opacity: 0.7;
+  }
 
 .card {
   display: flex;
   justify-content: space-around;
-  justify-items: center; }
+  justify-items: center;
+}
 
 .comprar {
   display: flex;
@@ -184,26 +280,83 @@ body {
   justify-items: center;
   font-family: 'Noto Serif', serif;
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
+.modal-container{
+  width: 80%;
+  margin: 0 10%;
+  max-height: 88vh;
+  color: white;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none;
+}
+.modal-container::-webkit-scrollbar{
+  display: none;
+}
+.modal-header{
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  color: white;
+  width: 100%;
+}
+.modal-header-tittle{
+  justify-content: start;
+}
+.modal-header-button{
+  cursor: pointer;
+}
+.modal-container > .modal-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 10px;
+}
+.modal-container > div > img {
+  height: 120px;
+  width: 120px;
+}
+.total-content{
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
 
 .img-main {
   height: 200px;
-  width: 200px; }
+  width: 200px;
+}
 
 .img-logo {
-  width: 200px; }
+  width: 200px;
+}
 
 .imagen {
-  display: flex; }
+  display: flex;
+}
 
 .buttom {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .margen {
   background-color: aqua;
   margin: 15px 20px 25px 30px;
-  padding: 30px 25px 20px 15px; }
+  padding: 30px 25px 20px 15px;
+}
 
 .menu-de-cosmetologia {
   font-family: "poppins", sans-serif;
@@ -219,34 +372,41 @@ body {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  grid-template-areas: "Belleza Belleza" "Maquillaje Fragancias" "Piel Piel "; }
+  grid-template-areas: "Belleza Belleza"
+    "Maquillaje Fragancias"
+    "Piel Piel ";
+}
 
 .item1 {
   background-color: gold;
   font-size: 30px;
   grid-area: Belleza;
-  font-family: "poppins", sans-serif; }
+  font-family: "poppins", sans-serif;
+}
 
 .maquillaje {
   background-image: url(../assetts/Img/cosmetologia1.png);
   background-size: cover;
   font-size: 30px;
   grid-area: Maquillaje;
-  font-family: "poppins", sans-serif; }
+  font-family: "poppins", sans-serif;
+}
 
 .perfumesyfragancias {
   background-image: url(../assetts/Img/cosmetologia2.png);
   background-size: cover;
   font-size: 30px;
   grid-area: Fragancias;
-  font-family: "poppins", sans-serif; }
+  font-family: "poppins", sans-serif;
+}
 
 .cuidadosdelapiel {
   background-image: url(../assetts/Img/cosmetologia3.png);
   background-size: cover;
   font-size: 30px;
   grid-area: Piel;
-  font-family: "poppins", sans-serif; }
+  font-family: "poppins", sans-serif;
+}
 
 .menu-de-dermocosmetica {
   font-family: "poppins", sans-serif;
@@ -262,41 +422,49 @@ body {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  grid-template-areas: "Dermocosmética Dermocosmética" "Rostro Solar" "Corporal Cabello"; }
+  grid-template-areas: "Dermocosmética Dermocosmética"
+    "Rostro Solar"
+    "Corporal Cabello";
+}
 
 .item2 {
   background-color: #0011ff;
   font-size: 30px;
   grid-area: Dermocosmética;
-  font-family: "poppins", sans-serif; }
+  font-family: "poppins", sans-serif;
+}
 
 .rostro {
   background-image: url(../assetts/Img/dermocosmetica1.png);
   background-size: cover;
   font-size: 30px;
   grid-area: Rostro;
-  font-family: "poppins", sans-serif; }
+  font-family: "poppins", sans-serif;
+}
 
 .solar {
   background-image: url(../assetts/Img/dermocosmetica2.png);
   background-size: cover;
   font-size: 30px;
   grid-area: Solar;
-  font-family: "poppins", sans-serif; }
+  font-family: "poppins", sans-serif;
+}
 
 .corporal {
   background-image: url(../assetts/Img/dermocosmetica3.png);
   background-size: cover;
   font-size: 30px;
   grid-area: Corporal;
-  font-family: "poppins", sans-serif; }
+  font-family: "poppins", sans-serif;
+}
 
 .cabello {
   background-image: url(../assetts/Img/dermocosmetica4.png);
   background-size: cover;
   font-size: 30px;
   grid-area: Cabello;
-  font-family: "poppins", sans-serif; }
+  font-family: "poppins", sans-serif;
+}
 
 .menu-cuidado-personal {
   font-family: "poppins", sans-serif;
@@ -312,34 +480,41 @@ body {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  grid-template-areas: "Cuidado-Personal Cuidado-Personal" "Adultos Salud-Oral" "Higiene-Personal Higiene-Personal"; }
+  grid-template-areas: "Cuidado-Personal Cuidado-Personal"
+    "Adultos Salud-Oral"
+    "Higiene-Personal Higiene-Personal";
+}
 
 .item3 {
   background-color: #00ff4c;
   font-size: 30px;
   grid-area: Cuidado-Personal;
-  font-family: "poppins", sans-serif; }
+  font-family: "poppins", sans-serif;
+}
 
 .adultos {
   background-image: url(../assetts/Img/cuidadopersonal1.png);
   background-size: cover;
   font-size: 30px;
   grid-area: Adultos;
-  font-family: "poppins", sans-serif; }
+  font-family: "poppins", sans-serif;
+}
 
 .salud-oral {
   background-image: url(../assetts/Img/cuidadopersonal2.png);
   background-size: cover;
   font-size: 30px;
   grid-area: Salud-Oral;
-  font-family: "poppins", sans-serif; }
+  font-family: "poppins", sans-serif;
+}
 
 .higiene-personal {
   background-image: url(../assetts/Img/cuidadopersonal3.png);
   background-size: cover;
   font-size: 30px;
   grid-area: Higiene-Personal;
-  font-family: "poppins", sans-serif; }
+  font-family: "poppins", sans-serif;
+}
 
 .menu-de-promociones {
   font-family: "poppins", sans-serif;
@@ -355,109 +530,148 @@ body {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  grid-template-areas: "Ofertas Ofertas" "Descuento-a Descuento-B" "Descuento-a Descuento-C "; }
+  grid-template-areas: "Ofertas Ofertas"
+    "Descuento-a Descuento-B"
+    "Descuento-a Descuento-C ";
+}
 
 .item4 {
   background-image: url(../assetts/Img/porcentajes.png);
   font-size: cover;
   font-size: 30px;
   grid-area: Ofertas;
-  font-family: "poppins", sans-serif; }
+  font-family: "poppins", sans-serif;
+}
 
 .descuento-a {
   background-image: url(../assetts/Img/descuento-a.png);
   background-size: cover;
   font-size: 30px;
   grid-area: Descuento-a;
-  font-family: "poppins", sans-serif; }
+  font-family: "poppins", sans-serif;
+}
 
 .descuento-b {
   background-image: url(../assetts/Img/descuento-b.png);
   background-size: cover;
   font-size: 30px;
   grid-area: Descuento-B;
-  font-family: "poppins", sans-serif; }
+  font-family: "poppins", sans-serif;
+}
 
 .descuento-c {
   background-image: url(../assetts/Img/descuento-c.png);
   background-size: cover;
   font-size: 30px;
   grid-area: Descuento-C;
-  font-family: "poppins", sans-serif; }
+  font-family: "poppins", sans-serif;
+}
 
 .promociones-1 {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 150px; }
-  .promociones-1 .nombre-empresa-1 {
-    margin-bottom: 1rem;
-    color: black;
-    text-align: center;
-    font-size: 3rem; }
-  .promociones-1 .nombre-empresa-1 span {
-    color: #21cc93; }
+  margin-top: 150px;
+}
+
+.promociones-1 .nombre-empresa-1 {
+  margin-bottom: 1rem;
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.promociones-1 .nombre-empresa-1 span {
+  color: #21cc93;
+}
 
 .body-contact {
   color: #fff;
   margin-top: 150px;
-  padding: 0 1.5rem; }
-  .body-contact .contenido {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto; }
-    .body-contact .contenido .nombre-empresa {
-      margin-bottom: 1rem;
-      color: black;
-      text-align: center;
-      font-size: 3rem; }
-    .body-contact .contenido .nombre-empresa span {
-      color: #21cc93; }
-    .body-contact .contenido .contenedor-contacto {
-      box-shadow: 0 0 20px 0 #4ef097; }
-    .body-contact .contenido .contenedor-contacto > * {
-      padding: 1rem; }
-    .body-contact .contenido .formulario-contacto {
-      background-color: #222222; }
-    .body-contact .contenido .formulario-contacto form {
-      display: grid;
-      grid-template-columns: 1fr 1fr; }
-    .body-contact .contenido .formulario-contacto form .bloque {
-      grid-column: 1/3; }
-    .body-contact .contenido .formulario-contacto form p {
-      margin: 0;
-      padding: 1em; }
-    .body-contact .contenido .formulario-contacto form button,
-    .body-contact .contenido .formulario-contacto form input,
-    .body-contact .contenido .formulario-contacto form textarea {
-      width: 100%;
-      padding: .7rem;
-      border: none;
-      background: none;
-      outline: none;
-      border-bottom: 1px solid #0de44d;
-      color: #fff; }
-    .body-contact .contenido .formulario-contacto form button {
-      background-color: #0de44d;
-      border: 0;
-      text-transform: uppercase;
-      padding: 1rem; }
+  padding: 0 1.5rem;
+}
+
+.body-contact .contenido {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body-contact .contenido .nombre-empresa {
+  margin-bottom: 1rem;
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.body-contact .contenido .nombre-empresa span {
+  color: #21cc93;
+}
+
+.body-contact .contenido .contenedor-contacto {
+  box-shadow: 0 0 20px 0 #4ef097;
+}
+
+.body-contact .contenido .contenedor-contacto>* {
+  padding: 1rem;
+}
+
+.body-contact .contenido .formulario-contacto {
+  background-color: #222222;
+}
+
+.body-contact .contenido .formulario-contacto form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.body-contact .contenido .formulario-contacto form .bloque {
+  grid-column: 1/3;
+}
+
+.body-contact .contenido .formulario-contacto form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.body-contact .contenido .formulario-contacto form button,
+.body-contact .contenido .formulario-contacto form input,
+.body-contact .contenido .formulario-contacto form textarea {
+  width: 100%;
+  padding: .7rem;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid #0de44d;
+  color: #fff;
+}
+
+.body-contact .contenido .formulario-contacto form button {
+  background-color: #0de44d;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1rem;
+}
 
 .info-contacto {
   background-color: #000;
-  color: #fff; }
+  color: #fff;
+}
 
 .info-contacto ul,
 .info-contacto p {
   text-align: center;
-  margin: 0 0 1rem 0; }
+  margin: 0 0 1rem 0;
+}
 
 .info-contacto ul {
   list-style-type: none;
-  padding: 0; }
+  padding: 0;
+}
 
 .info-contacto ul li {
-  padding: .3rem; }
+  padding: .3rem;
+}
 
 #footer {
   display: flex;
@@ -466,64 +680,96 @@ body {
   font-size: 20px;
   background-image: url(../assetts/Icons/2112.w023.n001.1505B.p1.1505.jpg);
   background-size: cover;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 i {
-  font-size: 2.2rem; }
+  font-size: 2.2rem;
+}
 
 @media only screen and (max-width: 768px) {
   body {
-    padding-top: 0px; }
-    body .header {
-      height: 60px; }
-      body .header .nav .logo {
-        font-size: 25px;
-        padding: 0 20px;
-        line-height: 60px; }
-      body .header .nav .nav-menu {
-        flex-direction: column;
-        align-items: center;
-        margin-right: 20px;
-        background-color: #333;
-        margin: 0;
-        position: fixed;
-        left: 0;
-        top: 60px;
-        width: 100%;
-        padding: 20px 0;
-        height: calc(100%-60px);
-        overflow-y: auto;
-        left: 100%;
-        transition: left 0.3s; }
-      body .header .nav .nav-menu-item {
-        line-height: 70px; }
-      body .header .nav .nav-menu-link:hover {
-        background: none;
-        color: #23b9df; }
-      body .header .nav .nav-toggle {
-        display: block; }
-      body .header .nav .nav-menu_visible {
-        left: 0; }
+    padding-top: 0px;
+  }
+
+  body .header {
+    height: 60px;
+  }
+
+  body .header .nav .logo {
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+
+  body .header .nav .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #333;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100%-60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+  body .header .nav .nav-menu-item {
+    line-height: 70px;
+  }
+
+  body .header .nav .nav-menu-link:hover {
+    background: none;
+    color: #23b9df;
+  }
+
+  body .header .nav .nav-toggle {
+    display: block;
+  }
+
+  body .header .nav .nav-menu_visible {
+    left: 0;
+  }
+
   .promociones-1 {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px; }
-    .promociones-1 .nombre-empresa-1 {
-      margin-bottom: 1rem;
-      text-align: center; }
+    margin-top: 150px;
+  }
+
+  .promociones-1 .nombre-empresa-1 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
   .body-contact {
     height: 100vh;
-    padding: 0 4rem; }
+    padding: 0 4rem;
+  }
+
   .formulario-contacto form {
     display: grid;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+  }
+
   .formulario-contacto form .bloque {
-    grid-column: 1/3; }
+    grid-column: 1/3;
+  }
+
   .info-contacto {
-    width: 100%; }
+    width: 100%;
+  }
+
   .formulario-contacto form p {
     margin: 0;
-    padding: 1em; }
+    padding: 1em;
+  }
+
   .formulario-contacto form button,
   .formulario-contacto form input,
   .formulario-contacto form textarea {
@@ -532,18 +778,26 @@ i {
     border: none;
     background: none;
     border-bottom: 1px solid #4adf7b;
-    color: #fff; }
-  .contenedor-contacto > * {
-    padding: 2rem; }
+    color: #fff;
+  }
+
+  .contenedor-contacto>* {
+    padding: 2rem;
+  }
+
   .info-contacto ul {
     padding: 1rem;
     margin-bottom: 20px;
     text-align: left;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
+
   .contactanos {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
+
   .comprar {
     font-family: "poppins", sans-serif;
     font-size: 25px;
@@ -555,102 +809,197 @@ i {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: center; }
-    .comprar .comprar-1 {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      justify-content: center; }
+    justify-content: center;
+  }
+
+  .comprar .comprar-1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+ .shop-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+ }
+ .card{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+ .card > img{
+  width: 90%;
+  height: 250px;
+ } 
+
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  .card button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    border-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  .card button:hover{
+    opacity: 0.7;
+  }
+
   .comerciales {
     width: 100%;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
+
   #footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
-    margin-top: 50px; }
+    margin-top: 50px;
+  }
+
   .menu-de-promociones {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, auto);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-template-areas: "Ofertas" "Descuento-a" "Descuento-B" "Descuento-C";
-    gap: 10px; }
+    grid-template-areas: "Ofertas"
+      "Descuento-a"
+      "Descuento-B"
+      "Descuento-C";
+    gap: 10px;
+  }
+
   .menu-de-dermocosmetica {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-template-areas: "Dermocosmética" "Rostro" "Solar" "Corporal" "Cabello";
-    gap: 10px; }
+    grid-template-areas: "Dermocosmética"
+      "Rostro"
+      "Solar"
+      "Corporal"
+      "Cabello";
+    gap: 10px;
+  }
+
   .menu-de-cosmetologia {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-template-areas: "Belleza" "Maquillaje" "Fragancias" "Piel "; }
+    grid-template-areas: "Belleza"
+      "Maquillaje"
+      "Fragancias"
+      "Piel ";
+  }
+
   .menu-cuidado-personal {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-template-areas: "Cuidado-Personal" "Adultos" "Salud-Oral" "Higiene-Personal"; } }
+    grid-template-areas: "Cuidado-Personal"
+      "Adultos"
+      "Salud-Oral"
+      "Higiene-Personal";
+  }
+}
 
 @media only screen and (max-width: 576px) {
   body {
-    padding-top: 0px; }
-    body .header {
-      height: 30px; }
-      body .header .nav {
-        width: 100%; }
-        body .header .nav .logo {
-          font-size: 25px;
-          padding: 0 20px;
-          line-height: 60px; }
-        body .header .nav .nav-menu {
-          flex-direction: column;
-          align-items: center;
-          margin-right: 20px;
-          background-color: #333;
-          margin: 0;
-          position: fixed;
-          left: 0;
-          top: 60px;
-          width: 100%;
-          padding: 20px 0;
-          height: calc(100%-60px);
-          overflow-y: auto;
-          left: 100%;
-          transition: left 0.3s; }
-        body .header .nav .nav-menu-item {
-          line-height: 70px; }
-        body .header .nav .nav-menu-link:hover {
-          background: none;
-          color: #23b9df; }
-        body .header .nav .nav-toggle {
-          display: block; }
-        body .header .nav .nav-menu_visible {
-          left: 0; }
+    padding-top: 0px;
+  }
+
+  body .header {
+    height: 30px;
+  }
+
+  body .header .nav {
+    width: 100%;
+  }
+
+  body .header .nav .logo {
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+
+  body .header .nav .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #333;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100%-60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+  body .header .nav .nav-menu-item {
+    line-height: 70px;
+  }
+
+  body .header .nav .nav-menu-link:hover {
+    background: none;
+    color: #23b9df;
+  }
+
+  body .header .nav .nav-toggle {
+    display: block;
+  }
+
+  body .header .nav .nav-menu_visible {
+    left: 0;
+  }
+
   .body-contact {
     height: 100vh;
-    padding: 0 4rem; }
+    padding: 0 4rem;
+  }
+
   .formulario-contacto form {
     display: grid;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+  }
+
   .formulario-contacto form .bloque {
-    grid-column: 1/3; }
+    grid-column: 1/3;
+  }
+
   .info-contacto {
-    width: 100%; }
+    width: 100%;
+  }
+
   .formulario-contacto form p {
     margin: 0;
-    padding: 1em; }
+    padding: 1em;
+  }
+
   .formulario-contacto form button,
   .formulario-contacto form input,
   .formulario-contacto form textarea {
@@ -659,25 +1008,37 @@ i {
     border: none;
     background: none;
     border-bottom: 1px solid #4adf7b;
-    color: #fff; }
-  .contenedor-contacto > * {
-    padding: 2rem; }
+    color: #fff;
+  }
+
+  .contenedor-contacto>* {
+    padding: 2rem;
+  }
+
   .info-contacto ul {
     padding: 1rem;
     margin-bottom: 20px;
     text-align: left;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
+
   .contactanos {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
+
   .promociones-1 {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px; }
-    .promociones-1 .nombre-empresa-1 {
-      margin-bottom: 1rem;
-      text-align: center; }
+    margin-top: 150px;
+  }
+
+  .promociones-1 .nombre-empresa-1 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
   .comprar {
     font-family: "poppins", sans-serif;
     font-size: 25px;
@@ -689,64 +1050,105 @@ i {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+  }
+
   .nombre-empresa {
     margin-bottom: 1rem;
     color: black;
     text-align: center;
-    font-size: 3rem; }
+    font-size: 3rem;
+  }
+
   .info-contacto {
-    width: 100%; }
+    width: 100%;
+  }
+
   .formulario-contacto form p {
     margin: 0;
-    padding: 1em; }
-  .contenedor-contacto > * {
-    padding: 1rem; }
+    padding: 1em;
+  }
+
+  .contenedor-contacto>* {
+    padding: 1rem;
+  }
+
   .info-contacto ul {
     padding: 1rem;
-    text-align: left; }
+    text-align: left;
+  }
+
   .info-contacto {
     display: flex;
     text-align: center;
-    align-items: center; }
+    align-items: center;
+  }
+
   .contactanos {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
+
   .comerciales {
     width: 100%;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
+
   #footer {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+  }
+
   .menu-de-promociones {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, auto);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-template-areas: "Ofertas" "Descuento-a" "Descuento-B" "Descuento-C";
-    gap: 10px; }
+    grid-template-areas: "Ofertas"
+      "Descuento-a"
+      "Descuento-B"
+      "Descuento-C";
+    gap: 10px;
+  }
+
   .menu-de-dermocosmetica {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-template-areas: "Dermocosmética" "Rostro" "Solar" "Corporal" "Cabello";
-    gap: 10px; }
+    grid-template-areas: "Dermocosmética"
+      "Rostro"
+      "Solar"
+      "Corporal"
+      "Cabello";
+    gap: 10px;
+  }
+
   .menu-de-cosmetologia {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-template-areas: "Belleza" "Maquillaje" "Fragancias" "Piel "; }
+    grid-template-areas: "Belleza"
+      "Maquillaje"
+      "Fragancias"
+      "Piel ";
+  }
+
   .menu-cuidado-personal {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-template-areas: "Cuidado-Personal" "Adultos" "Salud-Oral" "Higiene-Personal"; } }
+    grid-template-areas: "Cuidado-Personal"
+      "Adultos"
+      "Salud-Oral"
+      "Higiene-Personal";
+  }
+}
