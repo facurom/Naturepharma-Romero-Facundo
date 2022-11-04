@@ -331,6 +331,9 @@ body {
   text-align: center;
   padding-top: 20px;
 }
+.delete-product{
+  cursor: pointer;
+}
 
 
 
