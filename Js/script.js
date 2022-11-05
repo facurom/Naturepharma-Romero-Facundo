@@ -46,6 +46,7 @@ productos.forEach((producto)=>{
            img : producto.img,
             nombre: producto.nombre,
            precio: producto.precio,
+           cantidad: producto.cantidad,
         });
       console.log(carrito);
 

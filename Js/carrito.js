@@ -23,6 +23,7 @@ const pintarCarrito = () => {
           <img src="${producto.img}">
           <h3>${producto.nombre}</h3>
           <p>${producto.precio}$</p>
+          <p>Cantidad:${producto.cantidad}$</p>
         `;
         modalContainer.append(carritoContent);
         let eliminar = document.createElement("span");
