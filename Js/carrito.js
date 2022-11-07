@@ -24,8 +24,10 @@ const pintarCarrito = () => {
           <h3>${producto.nombre}</h3>
           <p>${producto.precio}$</p>
           <p>Cantidad:${producto.cantidad}$</p>
+          <p>Total: ${producto.cantidad * producto.precio}$</p>
         `;
         modalContainer.append(carritoContent);
+        console.log(carrito.length);
         let eliminar = document.createElement("span");
 
         eliminar.innerText = "❌";
@@ -34,7 +36,7 @@ const pintarCarrito = () => {
         eliminar.addEventListener("click", eliminarProducto);
 
     });
-    const total = carrito.reduce((acc, el) => acc + el.precio, 0);
+    const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
     const totalBuying = document.createElement ("div");
     totalBuying.className = "total-content";
     totalBuying.innerHTML = `total a pagar: ${total}$`;
@@ -49,4 +51,9 @@ const eliminarProducto = () => {
      return carritoId !== foundId; 
    })
    pintarCarrito(); 
+};
+
+const carritoCounter = () => {
+  cantidadCarrito.style.display = "block";
+  cantidadCarrito.innerText = carrito.length;
 };

@@ -1,6 +1,7 @@
 const shopContent= document.getElementById("shopContent");
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container");
+const cantidadCarrito = document.getElementById("cantidadCarrito");
 let carrito= [];
 
 /*console.log(productos);
@@ -41,14 +42,25 @@ productos.forEach((producto)=>{
     comprar.className = "comprar";
     content.append(comprar);
     comprar.addEventListener ("click", () =>{
-       carrito.push({
-           id : producto.id,
-           img : producto.img,
-            nombre: producto.nombre,
-           precio: producto.precio,
-           cantidad: producto.cantidad,
-        });
+        const repeat = carrito.some ((repeatProduct) => repeatProduct.id === producto.id);
+        if(repeat){
+            carrito.map((prod) =>{
+                if(prod.id === producto.id) {
+                    prod.cantidad++;
+                }
+            });
+        }else{    
+         carrito.push({
+              id : producto.id,
+              img : producto.img,
+              nombre: producto.nombre,
+              precio: producto.precio,
+              cantidad: producto.cantidad,
+            });
+        }     
+
       console.log(carrito);
+      carritoCounter();
 
     });
 });
