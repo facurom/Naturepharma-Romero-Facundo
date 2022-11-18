@@ -20,15 +20,15 @@ items.addEventListener('click', e => {
     accionBotones(e)
 })
 const fetchData = async () => {
-    try {
-        const res = await fetch('api.json')
-        const data = await res.json()
-        //console.log(data)
-        pintarProductos(data)
-        //detectarBotones(data)
-    } catch (error) {
-        console.log(error)
-    }
+  try {
+      const res = await fetch('../Js/api.json')
+      const data = await res.json()
+      //console.log(data)
+      pintarProductos(data)
+      //detectarBotones(data)
+  } catch (error) {
+      console.log(error)
+  }
 }
 const pintarProductos = data => {
 

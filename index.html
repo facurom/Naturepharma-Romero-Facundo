@@ -74,148 +74,186 @@
     </div>
   </section>
 
-  
+
   <div class="container">
     <h1 class="text-center">Mi Carrito</h1>
     <hr>
 
     <div class="my-5">
-        <h4>Carrito de compras</h4>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Item</th>
-              <th scope="col">Cantidad</th>
-              <th scope="col">Acción</th>
-              <th scope="col">Total</th>
-            </tr>
-          </thead>
-          <tbody id="items"></tbody>
-          <tfoot>
-            <tr id="footer-carrito">
-                <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
+      <h4>Carrito de compras</h4>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Acción</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody id="items"></tbody>
+        <tfoot>
+          <tr id="footer-carrito">
+            <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
 
     <div class="row" id="contenedor-productos"></div>
 
 
-</div>
+  </div>
 
-<template id="template-footer">
+  <template id="template-footer">
     <th scope="row" colspan="2">Total productos</th>
     <td>10</td>
     <td>
-        <button class="btn btn-danger btn-sm" id="vaciar-carrito">
-            vaciar todo
-        </button>
+      <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+        vaciar todo
+      </button>
     </td>
     <td class="font-weight-bold">$ <span>0</span></td>
-</template>
+  </template>
 
-<template id="template-carrito">
-  <tr>
-    <th scope="row">id</th>
-    <td>Café</td>
-    <td>1</td>
-    <td>
+  <template id="template-carrito">
+    <tr>
+      <th scope="row">id</th>
+      <td>Café</td>
+      <td>1</td>
+      <td>
         <button class="btn btn-info btn-sm">
-            +
+          +
         </button>
         <button class="btn btn-danger btn-sm">
-            -
+          -
         </button>
-    </td>
-    <td>$ <span class="span-1">500</span></td>
-  </tr>
-</template>
+      </td>
+      <td>$ <span class="span-1">500</span></td>
+    </tr>
+  </template>
 
 
-<template id="template-productos">
+  <template id="template-productos">
     <div class="col-12 col-md-4 mb-3">
-        <div class="card">
-            <img src="" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">$ <span>5000</span></p>
-                <button class="btn btn-dark">Comprar</button>
-            </div>
+      <div class="card">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">$ <span>5000</span></p>
+          <button class="btn btn-dark">Comprar</button>
         </div>
+      </div>
     </div>
-</template>
+  </template>
 
 
 
 
-<script src="app.js"></script>
+  <script src="app.js"></script>
 
-</body>  
-
-
-  <main class="fondo">
-
-    <section class="comerciales">
-      <article>
-        <iframe class="comerciales" width="560" height="315" src="https://www.youtube.com/embed/ZkjDiw3cwvo"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </article>
-      <article>
-        <iframe class="comerciales" width="560" height="315" src="https://www.youtube.com/embed/Sb5xiSOi3E4"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </article>
-    </section>
-    
+</body>
 
 
+<main class="fondo">
+
+  <section class="comerciales">
+    <article>
+      <iframe class="comerciales" width="560" height="315" src="https://www.youtube.com/embed/ZkjDiw3cwvo"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </article>
+    <article>
+      <iframe class="comerciales" width="560" height="315" src="https://www.youtube.com/embed/Sb5xiSOi3E4"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </article>
+  </section>
+  <div class="container mb-3">
+    <div class="row g-3">
+      <div class="col-12 col-6 col-md-6 col-lg-4 ">
+        <div class="card">
+          <img class="card-img-top" src="./assetts/Img/organic-cosmetics-1.jpg" alt="">
+
+          <div class="card-body">
+            <h5>Maya Chia</h5>
+            <p class="card-text"> Conozca nuestra linea propia de Serums, elaboracion con productos naturales</p>
+            <button class="btn btn-warning">Conocer más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-6 col-md-6 col-lg-4">
+        <div class="card">
+          <img class="card-img-top" src="./assetts/Img/liquid-lip-balm_disposition_image1.png">
 
 
+          <div class="card-body">
+            <h5>Zao</h5>
+            <p class="card-text">Conozca nuestra linea propia y organica de Balsamos</p>
+            <button class="btn btn-warning">Conocer más</button>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-12 col-6 col-md-6 col-lg-4">
+        <div class="card">
+          <img class="card-img-top" src="./assetts/Img/Captura de pantalla (58).png" alt="">
 
-
-
-    
-    
-
-    <div class="banner-2">
-      <h1>Marcas con las que trabajamos</h1>
-      <li>Maybelline</li>
-      <li>DaPop</li>
-      <li>Dermaglos</li>
-      <li>Loreal</li>
-      <li>Sephora</li>
-
+          <div class="card-body">
+            <h5>Preparados Magistrales</h5>
+            <p class="card-text">Elaboramos sus medicamentos de manera individualizada</p>
+            <button class="btn btn-warning">Conocer más</button>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
 
 
-  </main>
 
 
-  <footer id="footer">
-    <h4>Seguinos en nuestras redes sociales</h4>
-    <p>Copyright todos los derechos reservados</p>
-    <a href="https://www.instagram.com/farmacityoficial/"> <i class="bi bi-instagram"></i></a>
-    <a href="https://www.facebook.com/Farmacity"> <i class="bi bi-facebook"></i> </a>
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script>
 
-  <script src="./Js/app.js"></script>
-  <script src="./Js/index.js"></script>
-  
+
+
+
+
+  <div class="banner-2">
+    <h1>Marcas con las que trabajamos</h1>
+    <li>Maybelline</li>
+    <li>DaPop</li>
+    <li>Dermaglos</li>
+    <li>Loreal</li>
+    <li>Sephora</li>
+
+  </div>
+
+
+
+</main>
+
+
+<footer id="footer">
+  <h4>Seguinos en nuestras redes sociales</h4>
+  <p>Copyright todos los derechos reservados</p>
+  <a href="https://www.instagram.com/farmacityoficial/"> <i class="bi bi-instagram"></i></a>
+  <a href="https://www.facebook.com/Farmacity"> <i class="bi bi-facebook"></i> </a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+  </script>
+
+<script src="./Js/app.js"></script>
+<script src="./Js/index.js"></script>
+
 
 
 </body>
