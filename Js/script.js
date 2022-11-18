@@ -28,21 +28,21 @@ let contenedor = document.getElementById("misprods");
 }
 renderizarProds();*/
 
-productos.forEach((producto)=>{
-    let content = document.createElement("div");
-    content.className = "card";
-    content.innerHTML = `
+//productos.forEach((producto)=>{
+    //let content = document.createElement("div");
+    //content.className = "card";
+    //content.innerHTML = `
       <img src="${producto.img}">
       <h3>${producto.nombre}</h3>
       <p class="price">${producto.precio} $</p>
     `;
-    shopContent.append(content);
-    let comprar = document.createElement("button")
-    comprar.innerText = "comprar";
-    comprar.className = "comprar";
-    content.append(comprar);
-    comprar.addEventListener ("click", () =>{
-        const repeat = carrito.some ((repeatProduct) => repeatProduct.id === producto.id);
+    </img>shopContent.append(content);
+    //let comprar = document.createElement("button")
+    //comprar.innerText = "comprar";
+    //comprar.className = "comprar";
+    //content.append(comprar);
+    //comprar.addEventListener ("click", () =>{
+        //const repeat = carrito.some ((repeatProduct) => repeatProduct.id === producto.id);
         if(repeat){
             carrito.map((prod) =>{
                 if(prod.id === producto.id) {
@@ -63,4 +63,4 @@ productos.forEach((producto)=>{
       carritoCounter();
 
     });
-});
+//});
